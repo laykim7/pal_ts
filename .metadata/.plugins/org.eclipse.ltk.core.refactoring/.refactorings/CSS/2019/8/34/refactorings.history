@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CSS/zqsystem2.opi&apos; to &apos;zqsystem_endP.opi&apos;" description="Rename resource &apos;zqsystem2.opi&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="zqsystem2.opi" name="zqsystem_endP.opi" stamp="1566370643722" updateReferences="true"/>
+</session>
