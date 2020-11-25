@@ -129,7 +129,7 @@
     <width>310</width>
     <wuid>7c9bce2c:166e248206e:-735b</wuid>
     <x>20</x>
-    <y>702</y>
+    <y>714</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.tab" version="1.0.0">
     <actions hook="false" hook_all="false" />
