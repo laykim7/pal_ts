@@ -1,6 +1,7 @@
 #! /bin/sh
-source /git/envDev.sh
 PROJECT_TOP="../.."
+source /git/envDev.sh
+source $PROJECT_TOP/gitBranchInfo.sh
 
 gitPush()
 {
