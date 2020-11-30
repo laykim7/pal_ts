@@ -1,0 +1,25 @@
+record(longin, "$(SYS):$(SUBSYS):$(DEV):ARR_IVAL_$(PVNAME)") {
+  field(PINI, "YES")
+  field(VAL, "0")
+}
+
+record(longin, "$(SYS):$(SUBSYS):$(DEV):ARR_COUNT_$(PVNAME)") {
+  field(PINI, "YES")
+  field(VAL, "2000")
+}
+
+record(longin, "$(SYS):$(SUBSYS):$(DEV):ARR_INC_$(PVNAME)") {
+  field(PINI, "YES")
+  field(VAL, "0")
+}
+
+record(sub, "$(SYS):$(SUBSYS):$(DEV):ARR_INIT_$(PVNAME)") {
+  field(PINI, "NO")
+  field(INAM, "initStrToValue")
+  field(SNAM, "procStrToValue")
+  field(INPA, "$(SYS):$(SUBSYS):$(DEV):$(PVNAME)")
+  field(INPB, "$(SYS):$(SUBSYS):$(DEV):ARR_IVAL_$(PVNAME)")
+  field(INPC, "$(SYS):$(SUBSYS):$(DEV):ARR_COUNT_$(PVNAME)")
+  field(INPD, "$(SYS):$(SUBSYS):$(DEV):ARR_INC_$(PVNAME)")
+  field(SCAN, "")
+}

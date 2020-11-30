@@ -1,0 +1,149 @@
+
+static ssize_t char_read (
+	struct file *filp,
+	char __user *buf,
+	size_t count,
+	loff_t *pos
+)
+{
+    struct file_data *fdata = (struct file_data *)filp->private_data;
+    struct board_data *board = fdata->board;
+	int rc, cond;
+	size_t tmp_count;
+	int i;
+
+    dev_dbg(&board->pci_dev->dev, "  read(), site_mode=%u count %zd\n", fdata->site_mode, count);
+    if(0) {}
+#ifdef CONFIG_MPS_PICO_FRIB
+    else if(dmac_site==USER_SITE_FRIB) {
+        switch(fdata->site_mode) {
+        case 0:  break;
+        case 1:  return frib_read_reg(board, buf, count, pos);
+        case 2:  return frib_read_capture(board, buf, count, pos);
+        default: return -EINVAL;
+        }
+    }
+#endif
+    else if(fdata->site_mode!=0)
+        return -EINVAL;
+
+    // if read bytes larger than MAX, exit
+    if (count > DMA_BUF_COUNT*DMA_BUF_SIZE) 
+    {
+        return -EINVAL;
+    }
+
+    spin_lock_irq(&board->dma_queue.lock);
+
+	if (board->read_in_progress) 
+    {
+        spin_unlock_irq(&board->dma_queue.lock);
+        dev_dbg(&board->pci_dev->dev, "  read(), concurrent read()s not allowed\n");
+		return -EIO;
+	}
+
+	board->read_in_progress = 1;
+
+	// START DMA TRANSFER
+	i = 0;
+	tmp_count = count;
+    // disable DMA engine
+	dma_enable(board, 0);
+	while (tmp_count > DMA_BUF_SIZE) 
+    {
+        // write ADDRESS, LENGTH AND KEEP IRQ LOW
+		dma_push(board, (uint32_t)board->dma_buf[i++], DMA_BUF_SIZE, 0);
+		tmp_count -= DMA_BUF_SIZE;
+	}
+    // write ADDRESS, LENGTH AND RISE IRQ
+	dma_push(board, (uint32_t)board->dma_buf[i], tmp_count, 1);
+	mb();
+    // ENABLE DMA engine
+	dma_enable(board, 1);
+
+    if (likely(board->irqmode != dmac_irq_poll)) 
+    {
+        rc = wait_event_interruptible_locked_irq(board->dma_queue, board->dma_irq_flag!=0);
+    } 
+    else 
+    {
+        const unsigned long twait = msecs_to_jiffies(1);
+        do 
+        {
+            spin_unlock_irq(&board->dma_queue.lock);
+            /* must unlock for call to amc_isr() as spin locks aren't recursive */
+            if (amc_isr(board->pci_dev->irq, board) == IRQ_NONE)
+            {
+                rc = wait_event_interruptible_timeout(board->dma_queue, board->dma_irq_flag!=0, twait);
+            }
+            else
+            {
+                rc = 0;
+            }
+            spin_lock_irq(&board->dma_queue.lock);
+            /* continue while no "IRQ" signaled, and wait not interrupted */
+        } while(board->dma_irq_flag==0 && rc>=0);
+
+        if (rc > 0)
+        {
+            rc = 0;
+        }
+    }
+    /*
+     * dma_irq_flag==1 && rc==0 is normal completion
+     * rc==-ERESTARTSYS is user abort
+     * other cases not to happen, but are treated as -ECANCELED
+     */
+
+    cond = board->dma_irq_flag;
+    board->dma_irq_flag = 0;
+	board->read_in_progress = 0;
+    dev_dbg(&board->pci_dev->dev, "read() wait complete w/ rc=%d cond=%d\n", rc, cond);
+
+	if ((rc != 0) || (cond !=1 )) 
+    { /* interrupted or aborted */
+		if(cond!=1) rc = -ECANCELED;
+		/* reset DMA engine */
+		dma_reset(board);
+        board->dma_bytes_trans = 0;
+        spin_unlock_irq(&board->dma_queue.lock);
+
+        dev_dbg(&board->pci_dev->dev, "  read(): interrupt failed: %d\n", rc);
+		return rc;
+	} 
+    else 
+    {
+        spin_unlock_irq(&board->dma_queue.lock);
+
+		i = 0;
+		tmp_count = count;
+        dev_dbg(&board->pci_dev->dev, "  read(): returned from sleep\n");
+		rc = 0;
+		while ((tmp_count > DMA_BUF_SIZE) && (rc == 0)) 
+        {
+			rc = copy_to_user(buf + DMA_BUF_SIZE*i, board->kernel_mem_buf[i], DMA_BUF_SIZE);
+			tmp_count -= DMA_BUF_SIZE;
+			/* sometimes the DMA done interrupt comes even though nothing has been
+			 * transfered.  Fill our buffer with a test pattern so that this is more
+			 * obvious.
+			 */
+			memset(board->kernel_mem_buf[i], 0xf0, DMA_BUF_SIZE);
+			i++;
+		}
+
+		if (rc == 0) 
+        {
+			rc = copy_to_user(buf + DMA_BUF_SIZE*i,	board->kernel_mem_buf[i], tmp_count);
+			memset(board->kernel_mem_buf[i], 0xf0, tmp_count);
+		}
+
+		if (rc) 
+        {
+            return rc;
+        }
+	}
+
+	*pos += count;
+
+	return count;
+}
