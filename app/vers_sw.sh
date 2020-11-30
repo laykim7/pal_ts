@@ -3,22 +3,18 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_sw="5591c79 2020-11-25T19:58:08"
+export ver_sw="bb29f68 2020-11-30T17:35:28"
 
 : <<'END'
 ================================================================================================================
-commit log 2020-11-25T19:58:08
+commit log 2020-11-30T17:35:28
 ================================================================================================================
-5591c79e9b33b9aedc4159b8d4b4178051f4b86e Wed, 25 Nov 2020 19:58:07 +0900, if evg1 time dont change -> gtp reset 3
-dcee2f210687f39631898f29a1209602f0c7020d Wed, 25 Nov 2020 19:54:41 +0900, update sw version info
-4079d3090d44198e31705451796addedb84dcf0b Wed, 25 Nov 2020 19:54:40 +0900, time sync 1
-d2f2e5537c1ca75441658217ced3f3b439fbf702 Wed, 25 Nov 2020 19:51:38 +0900, update sw version info
-05ad0ff787778c04798509db30cb12a07f3c37e0 Wed, 25 Nov 2020 19:51:37 +0900, time sync 0
-7f188a4e869794b2ccd86d31f81c4941d954ace5 Wed, 25 Nov 2020 19:33:45 +0900, update sw version info
-9d19fd146c75938f64108a8db4a46aaeab89d50c Wed, 25 Nov 2020 19:33:44 +0900, if evg1 time dont change -> gtp reset 2
-e6a3eb5950522109626d375b5c6fb68131d4f6d8 Wed, 25 Nov 2020 19:00:05 +0900, update tspv version info
-c41974f6ad8d07ea224b5695fbd2ae1eee836332 Wed, 25 Nov 2020 19:00:05 +0900, evg pv init value update
-60aaccf72242e741d2d25f2ae864cf974acfbb91 Wed, 25 Nov 2020 18:29:26 +0900, update sw version info
+bb29f68524df446b891313a6fd9c3513d6a52a24 Mon, 30 Nov 2020 17:34:55 +0900, update boot version info
+b188e8320a2958d7cb0551cae8c2506525b7c446 Mon, 30 Nov 2020 17:34:45 +0900, update image version info
+9f11d967be92020e6b86a1053d892c4c4bbaac0e Mon, 30 Nov 2020 17:33:39 +0900, update git push logic
+5db79a4526a1c3a7b6ee1f8e05fb6ff9f7279101 Mon, 30 Nov 2020 17:33:01 +0900, update sm version info
+8b956dc00b100e91864377b1a5f16fd7cb8a5fbb Mon, 30 Nov 2020 17:28:05 +0900, update sm version info
+1ef11e974bd956904d4baf68e23a4381686c2168 Mon, 30 Nov 2020 17:24:01 +0900, refresh
 
 ================================================================================================================
 END
