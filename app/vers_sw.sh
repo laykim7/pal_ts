@@ -3,12 +3,13 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_sw="bb29f68 2020-11-30T17:35:28"
+export ver_sw="b9baa5f 2020-12-03T16:52:54"
 
 : <<'END'
 ================================================================================================================
-commit log 2020-11-30T17:35:28
+commit log 2020-12-03T16:52:54
 ================================================================================================================
+b9baa5f01aa068a4c64134e4ab0bac7abd2f1f4e Mon, 30 Nov 2020 17:35:28 +0900, update sw version info
 bb29f68524df446b891313a6fd9c3513d6a52a24 Mon, 30 Nov 2020 17:34:55 +0900, update boot version info
 b188e8320a2958d7cb0551cae8c2506525b7c446 Mon, 30 Nov 2020 17:34:45 +0900, update image version info
 9f11d967be92020e6b86a1053d892c4c4bbaac0e Mon, 30 Nov 2020 17:33:39 +0900, update git push logic
