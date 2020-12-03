@@ -3,12 +3,14 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_sm="216b8b8 2020-12-03T16:55:31"
+export ver_sm="5de463d 2020-12-03T17:29:11"
 
 : <<'END'
 ================================================================================================================
-commit log 2020-12-03T16:55:31
+commit log 2020-12-03T17:29:11
 ================================================================================================================
+5de463d28ebc506ee98293647d45ee4e97b23b3a Thu, 3 Dec 2020 17:29:11 +0900, git update procedure change
+5887396397d8abe9e410af53538485f967ffbc05 Thu, 3 Dec 2020 16:55:31 +0900, update sm version info
 216b8b8dfbc4e9ab7e9b868ef318223b7bd0dd5a Thu, 3 Dec 2020 16:52:54 +0900, update sw version info
 b9baa5f01aa068a4c64134e4ab0bac7abd2f1f4e Mon, 30 Nov 2020 17:35:28 +0900, update sw version info
 bb29f68524df446b891313a6fd9c3513d6a52a24 Mon, 30 Nov 2020 17:34:55 +0900, update boot version info
