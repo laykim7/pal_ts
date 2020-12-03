@@ -204,7 +204,7 @@ start ()
   mkdir /mnt/nfs
   mount -o nolock ${serverIp}:${wspace} /mnt/nfs
 
-  chkVer
+  # chkVer
 
   if [ ${insDrv0} = 1 ]; then insmod ${drv0}; fi
   if [ ${insDrv1} = 1 ]; then insmod ${drv1}; fi
@@ -246,16 +246,16 @@ stop ()
 
 epicsRun ()
 {
-  chkVer
-  
 # add your app
   cd ${iocF}
   ./st.cmd
 }
 
-epicsJustRun ()
+epicsUpdateRun ()
 {
 # add your app
+  chkVer
+  
   cd ${iocF}
   ./st.cmd
 }
@@ -328,8 +328,8 @@ case "$1" in
           stop; ;;
   run)
           epicsRun $2; ;;
-  jrun)
-          epicsJustRun $2; ;;              
+  urun)
+          epicsUpdateRun $2; ;;              
   upSys)
           upSys; ;;
   upEpics)
@@ -340,7 +340,7 @@ case "$1" in
           gitRecovery; ;;
   *)
           echo "======================================="
-          echo "Usage: $0 {start|stop|run|jrun|upSys|upLinux|upFpga|upEpics|gitRecovery}"
+          echo "Usage: $0 {start|stop|run|urun|upSys|upLinux|upFpga|upEpics|gitRecovery}"
           exit 1
 esac
 
