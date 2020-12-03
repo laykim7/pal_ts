@@ -225,7 +225,7 @@ start ()
 
   if [ $autoStart = 1 ]; then
     echo "auto start!!!"
-    screen -S epics -m /home/root/./sm jrun
+    screen -S epics -m /home/root/./sm run
   fi
 }
 
