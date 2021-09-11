@@ -458,6 +458,7 @@ asynStatus tsDev_evx::writeString(const RegMap &rmap, const char *val)
     else if (strcmp(val, "EXT_IN_SL_13"  ) == 0 ) value = 28;
     else if (strcmp(val, "EXT_IN_SL_14"  ) == 0 ) value = 29;
     else if (strcmp(val, "EXT_IN_SL_15"  ) == 0 ) value = 30;
+    else if (strcmp(val, "EXT_SYNC_01"   ) == 0 ) value = 31;
     else if (strcmp(val, "none"          ) == 0 ) value =  0;
     else if (strcmp(val, "MASK A0"       ) == 0 ) value =  1;
     else if (strcmp(val, "MASK A1"       ) == 0 ) value =  2;
