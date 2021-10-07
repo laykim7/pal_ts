@@ -1,4 +1,4 @@
 #!/bin/sh
 
-export gitBranchName="ts_pal_sw"
+export gitBranchName="dds_ts_app1.4_pal"
 
