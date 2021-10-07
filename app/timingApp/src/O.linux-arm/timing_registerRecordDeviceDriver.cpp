@@ -426,7 +426,7 @@ static struct iocshVarDef vardefs[] = {
 
 int timing_registerRecordDeviceDriver(DBBASE *pbase)
 {
-    const char *bldTop = "/git/ts_pal_sw/app";
+    const char *bldTop = "/git/dds_ts_app1.4_pal/app";
     const char *envTop = getenv("TOP");
 
     if (envTop && strcmp(envTop, bldTop)) {
