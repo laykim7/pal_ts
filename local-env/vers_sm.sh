@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_sm="5ef8a3d 2020-12-03T17:38:23"
+export ver_sm="9d3732f 2021-10-07T21:28:31"
 
 : <<'END'
 ================================================================================================================
-commit log 2020-12-03T17:38:23
+commit log 2021-10-07T21:28:31
 ================================================================================================================
-5ef8a3d9fdaa1d360d129e1fbdf674c83382b528 Thu, 3 Dec 2020 17:38:22 +0900, git update procedure change 1
-94b1e8bf326c217c227ed091f4505ac341e39e94 Thu, 3 Dec 2020 17:29:11 +0900, update sm version info
-5de463d28ebc506ee98293647d45ee4e97b23b3a Thu, 3 Dec 2020 17:29:11 +0900, git update procedure change
-5887396397d8abe9e410af53538485f967ffbc05 Thu, 3 Dec 2020 16:55:31 +0900, update sm version info
-216b8b8dfbc4e9ab7e9b868ef318223b7bd0dd5a Thu, 3 Dec 2020 16:52:54 +0900, update sw version info
-b9baa5f01aa068a4c64134e4ab0bac7abd2f1f4e Mon, 30 Nov 2020 17:35:28 +0900, update sw version info
-bb29f68524df446b891313a6fd9c3513d6a52a24 Mon, 30 Nov 2020 17:34:55 +0900, update boot version info
-b188e8320a2958d7cb0551cae8c2506525b7c446 Mon, 30 Nov 2020 17:34:45 +0900, update image version info
-9f11d967be92020e6b86a1053d892c4c4bbaac0e Mon, 30 Nov 2020 17:33:39 +0900, update git push logic
-5db79a4526a1c3a7b6ee1f8e05fb6ff9f7279101 Mon, 30 Nov 2020 17:33:01 +0900, update sm version info
+9d3732f4718ce091c0ce24becc77e3dbf5fcce40 Thu, 7 Oct 2021 21:28:31 +0900, no nfs
+653a2a4275e190f0796a5cafe05f6a076b934bc7 Thu, 7 Oct 2021 21:05:32 +0900, envPath change
+60ab9ac5b92b7c9804d563bd1c62d76b376567e8 Thu, 7 Oct 2021 18:50:46 +0900, update sw version info
+e631936cb02fb6827f65578f7af4c407b88758c4 Thu, 7 Oct 2021 18:50:45 +0900, refresh
+27fe5be6201f503068dd60369cc79252cf7dc399 Thu, 7 Oct 2021 18:49:15 +0900, update sw version info
+21d8456c0878102863600dd2e88f815898425af2 Thu, 7 Oct 2021 17:23:20 +0900, upload to server
+f7807c1a6ea53a5421e89ee4e3206be97cc6aa5b Thu, 7 Oct 2021 17:22:50 +0900, upload to server
+6df34573d2be146cface0e2fedd68919d07b18f2 Sat, 11 Sep 2021 16:50:43 +0900, update boot version info
+eb9e2d372bbc336ffb0675e8e3ca42da0bc48374 Sat, 11 Sep 2021 16:50:41 +0900, 60hz sync update
+97d3179fc841670e3271689a55fe2396a978fe63 Sat, 11 Sep 2021 16:43:55 +0900, update sw version info
 
 ================================================================================================================
 END
