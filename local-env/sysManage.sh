@@ -202,7 +202,7 @@ start ()
   ln -s ${src_wspace} /git/${gitBranchName}
 
   mkdir /mnt/nfs
-  mount -o nolock ${serverIp}:${wspace} /mnt/nfs
+  # mount -o nolock ${serverIp}:${wspace} /mnt/nfs
 
   # chkVer
 
