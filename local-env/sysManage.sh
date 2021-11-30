@@ -199,7 +199,7 @@ start ()
   ln -s ${src_wspace} /gitWspace
 
   mkdir /git
-  ln -s ${src_wspace} /git/${gitBranchName}
+  ln -s ${src_wspace} /git/${gitProjName}
 
   mkdir /mnt/nfs
   # mount -o nolock ${serverIp}:${wspace} /mnt/nfs
