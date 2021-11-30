@@ -199,7 +199,7 @@ start ()
   mkdir /home/ctrluser
   ln -s /mnt/sdcard/epics /home/ctrluser/epics
   
-  ln -s ${src_wspace} /gitWspace
+  ln -s ${src_wspace}/${gitBranchName} /gitWspace
 
   mkdir /git
   ln -s ${src_wspace} /git/${gitProjName}
