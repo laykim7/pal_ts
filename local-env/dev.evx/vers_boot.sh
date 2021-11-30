@@ -3,12 +3,14 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_boot="48a6427 2021-12-01T00:50:53"
+export ver_boot="9412ba2 2021-12-01T01:51:00"
 
 : <<'END'
 ================================================================================================================
-commit log 2021-12-01T00:50:53
+commit log 2021-12-01T01:51:00
 ================================================================================================================
+9412ba21475d65a94e3f86158fde7c82a7fd2b1e Wed, 1 Dec 2021 01:50:58 +0900, ev12~15 bug fix
+562702adc4f3f2df7b7b0a78a3a025a999724132 Wed, 1 Dec 2021 00:50:53 +0900, update boot version info
 48a642700159b9b83c73e74da60b5d82e1378ccc Wed, 1 Dec 2021 00:50:50 +0900, sync ev12~15
 a0409537e83e912d9365fc420d8ba2896c779a82 Wed, 1 Dec 2021 00:32:40 +0900, update sw version info
 f36d112059848c32a47b41121e04f44ce2136b9e Wed, 1 Dec 2021 00:32:38 +0900, sync, ev12~15 add
@@ -17,8 +19,6 @@ b593353890f4c0521501da3fe82ff7e387a80df9 Tue, 30 Nov 2021 21:27:55 +0900, update
 79cd41573174796cfc5484f2c6c7b5eee0b1ab47 Tue, 30 Nov 2021 21:18:28 +0900, update sm version info
 ea79e97fb4453d82752f98a7112782abb689762a Tue, 30 Nov 2021 21:18:27 +0900, update
 e8069f41597185ec36e19bad76589cd508fa5c33 Tue, 30 Nov 2021 21:10:36 +0900, update sm version info
-cd562ebcd786750b5bf8ff7723696f49dc6cbd08 Tue, 30 Nov 2021 21:10:35 +0900, update
-0a2fd518b9e55ac67743e2af7a6f064519ca6e55 Tue, 30 Nov 2021 21:08:10 +0900, update sm version info
 
 ================================================================================================================
 END
