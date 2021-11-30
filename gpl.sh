@@ -8,7 +8,7 @@ echo '  branch: ' $gitBranchName
 
 gitPull()
 {
-  spawn git pull $gitServerName $gitBranchName
+  git pull $gitServerName $gitBranchName
 }
 
 case "$1" in

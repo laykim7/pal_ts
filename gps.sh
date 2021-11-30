@@ -8,7 +8,7 @@ echo '  branch: ' $gitBranchName
 
 gitPush()
 {
-  spawn git push $gitServerName $gitBranchName
+  git push $gitServerName $gitBranchName
 }
 
 _update ()

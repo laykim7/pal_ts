@@ -6,7 +6,7 @@ make
 
 gitPush()
 {
-  spawn git push $gitServerName $gitBranchName
+  git push $gitServerName $gitBranchName
 }
 
 _common ()
