@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_boot="37d40f2 2021-11-30T18:59:57"
+export ver_boot="48a6427 2021-12-01T00:50:53"
 
 : <<'END'
 ================================================================================================================
-commit log 2021-11-30T18:59:57
+commit log 2021-12-01T00:50:53
 ================================================================================================================
-37d40f224e60e12aa6bcf12d16fe8628b487af76 Tue, 30 Nov 2021 18:59:18 +0900, update boot version info
-c307537c9d286a83d4894dada1b0a8f706625fa9 Tue, 30 Nov 2021 18:58:06 +0900, revision update
-3110fe91d663653c1703d90109c6ce35f2792420 Tue, 30 Nov 2021 18:56:21 +0900, revision update
-3235bffba0eac9906fa14275ea629c434daf8652 Tue, 30 Nov 2021 18:55:39 +0900, update sw version info
-15acb09744a9bd8646ff3919ad0d4afe3f5e8d18 Tue, 30 Nov 2021 18:55:39 +0900, revision
-1ad654f635fb8723bb00a766b8ba61c11b9e258f Thu, 7 Oct 2021 21:28:31 +0900, update sm version info
-9d3732f4718ce091c0ce24becc77e3dbf5fcce40 Thu, 7 Oct 2021 21:28:31 +0900, no nfs
-653a2a4275e190f0796a5cafe05f6a076b934bc7 Thu, 7 Oct 2021 21:05:32 +0900, envPath change
-60ab9ac5b92b7c9804d563bd1c62d76b376567e8 Thu, 7 Oct 2021 18:50:46 +0900, update sw version info
-e631936cb02fb6827f65578f7af4c407b88758c4 Thu, 7 Oct 2021 18:50:45 +0900, refresh
+48a642700159b9b83c73e74da60b5d82e1378ccc Wed, 1 Dec 2021 00:50:50 +0900, sync ev12~15
+a0409537e83e912d9365fc420d8ba2896c779a82 Wed, 1 Dec 2021 00:32:40 +0900, update sw version info
+f36d112059848c32a47b41121e04f44ce2136b9e Wed, 1 Dec 2021 00:32:38 +0900, sync, ev12~15 add
+859fabbe110555b8b35f3f5bfe07ddacd6e054ab Tue, 30 Nov 2021 21:27:56 +0900, update sm version info
+b593353890f4c0521501da3fe82ff7e387a80df9 Tue, 30 Nov 2021 21:27:55 +0900, update
+79cd41573174796cfc5484f2c6c7b5eee0b1ab47 Tue, 30 Nov 2021 21:18:28 +0900, update sm version info
+ea79e97fb4453d82752f98a7112782abb689762a Tue, 30 Nov 2021 21:18:27 +0900, update
+e8069f41597185ec36e19bad76589cd508fa5c33 Tue, 30 Nov 2021 21:10:36 +0900, update sm version info
+cd562ebcd786750b5bf8ff7723696f49dc6cbd08 Tue, 30 Nov 2021 21:10:35 +0900, update
+0a2fd518b9e55ac67743e2af7a6f064519ca6e55 Tue, 30 Nov 2021 21:08:10 +0900, update sm version info
 
 ================================================================================================================
 END
