@@ -268,7 +268,6 @@ upSys()
     echo "update - done."
 }
 
-
 gitRecovery()
 {
   rm $src_wspace -rf
@@ -277,7 +276,7 @@ gitRecovery()
   git init
   sync
   git config user.name $L_DEV_PN
-  git config user.email 'info@durutronix.com'
+  git config user.email 'info@dandansys.com'
   git remote add nas $gitServerPATH
   sync
   gitPullNas

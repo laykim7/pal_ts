@@ -1,25 +1,14 @@
 #! /bin/sh
 
 PROJECT_TOP=".."
-source $HOME/envDev.sh
 source ./gitBranchInfo.sh
 
-echo '  remote: NAS'
+echo '  remote: ' $gitServerName
 echo '  branch: ' $gitBranchName
 
 gitPush()
 {
-expect <<EOF
-set timeout 180
-spawn git push nas $gitBranchName
-expect {
-  "(y/n)" {send "y\r";exp_continue}
-  "password:" {send "$gitServerPD\n"}
-  "root@" {send "\r"}
-  "Already up-to-date." {send "\r"}
-}
-expect eof
-EOF
+  spawn git push $gitServerName $gitBranchName
 }
 
 _update ()

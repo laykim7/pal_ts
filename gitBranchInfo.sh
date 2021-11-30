@@ -1,4 +1,5 @@
 #!/bin/sh
 
-export gitBranchName="dds_ts_app1.4_pal"
+export gitServerName="syn"
+export gitBranchName="app_evx1.4"
 
