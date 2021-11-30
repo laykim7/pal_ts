@@ -277,7 +277,7 @@ gitRecovery()
   sync
   git config user.name $L_DEV_PN
   git config user.email 'info@dandansys.com'
-  git remote add nas $gitServerPATH
+  git remote add $gitServerName $gitServerPATH
   sync
   gitPullNas
   sync
