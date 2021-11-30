@@ -37,6 +37,7 @@ spawn git pull $gitServerName $gitBranchName
 expect {
   "(y/n)" {send "y\r";exp_continue}
   "Username" {send "laykim\n"}
+  "Password:" {send "$gitServerPD\n"}
   "password:" {send "$gitServerPD\n"}
   "root@" {send "\r"}
   "Already up-to-date." {send "\r"}
