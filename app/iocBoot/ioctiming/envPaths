@@ -1,4 +1,3 @@
 epicsEnvSet("ARCH","linux-x86_64")
 epicsEnvSet("IOC","ioctiming")
-epicsEnvSet("TOP","/git/dds_ts_app1.4_pal/app")
-
+epicsEnvSet("TOP","/git/pal_ts/app_evx1.4/app")
