@@ -35,14 +35,15 @@ expect <<EOF
 set timeout 180
 spawn git pull $gitServerName $gitBranchName
 expect {
-  "(y/n)" {send "y\r";exp_continue}
-  "Username" {send "laykim\n"}
-  "Password" {send "$gitServerPD\n"}
-  "password:" {send "$gitServerPD\n"}
-  "root@" {send "\r"}
-  "Already up-to-date." {send "\r"}
+  "(y/n)"               {send "y\r";            exp_continue}
+  "Username"            {send "laykim\n";       exp_continue}
+  "Password"            {send "$gitServerPD\n"; exp_continue}
+  "password"            {send "$gitServerPD\n"; exp_continue}
+  "root@"               {send "\r";             exp_continue}
+  "Already up-to-date." {send "\r";             exp_continue}
 }
 expect eof   
+
 EOF
 }
 
