@@ -1,23 +1,12 @@
 #! /bin/sh
 PROJECT_TOP=".."
-source /git/envDev.sh
 source $PROJECT_TOP/gitBranchInfo.sh
 
 make
 
 gitPush()
 {
-expect <<EOF
-set timeout 180
-spawn git push $gitServerName $gitBranchName
-expect {
-  "(y/n)" {send "y\r";exp_continue}
-  "password:" {send "$gitServerPD\n"}
-  "root@" {send "\r"}
-  "Already up-to-date." {send "\r"}
-}
-expect eof
-EOF
+  spawn git push $gitServerName $gitBranchName
 }
 
 _common ()
