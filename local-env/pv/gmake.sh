@@ -1,10 +1,10 @@
 #! /bin/sh
-PROJECT_TOP=".."
+PROJECT_TOP="../.."
 source $PROJECT_TOP/gitBranchInfo.sh
 
 gitPush()
 {
-  spawn git push $gitServerName $gitBranchName
+  git push $gitServerName $gitBranchName
 }
 
 
