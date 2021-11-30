@@ -1124,7 +1124,8 @@ int ts2ipEvsys::set_slaveIO_byMode()
 
   if(sl.id==0x01){
     if((*ptsMode == RAON_EVG) || (*ptsMode == RAON_EVS) || (*ptsMode == RAON_EVRUP)){
-      slio = 0xffff;
+      // slio = 0xffff;
+      slio = 0x1; // only PAL option //only ch0 input config
     }
     else{
       slio = 0;
