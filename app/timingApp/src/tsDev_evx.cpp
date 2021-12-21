@@ -436,29 +436,9 @@ asynStatus tsDev_evx::writeString(const RegMap &rmap, const char *val)
     else if (strcmp(val, "MXC_05"        ) == 0 ) value =  6;
     else if (strcmp(val, "MXC_06"        ) == 0 ) value =  7;
     else if (strcmp(val, "MXC_07"        ) == 0 ) value =  8;
-    else if (strcmp(val, "MXC_08"        ) == 0 ) value =  9;
-    else if (strcmp(val, "MXC_09"        ) == 0 ) value = 10;
-    else if (strcmp(val, "MXC_10"        ) == 0 ) value = 11;
-    else if (strcmp(val, "MXC_11"        ) == 0 ) value = 12;
-    else if (strcmp(val, "MXC_12"        ) == 0 ) value = 13;
-    else if (strcmp(val, "MXC_13"        ) == 0 ) value = 14;
     else if (strcmp(val, "EXT_IN_SL_00"  ) == 0 ) value = 15;
-    // else if (strcmp(val, "EXT_IN_SL_01"  ) == 0 ) value = 16;
-    // else if (strcmp(val, "EXT_IN_SL_02"  ) == 0 ) value = 17;
-    // else if (strcmp(val, "EXT_IN_SL_03"  ) == 0 ) value = 18;
-    // else if (strcmp(val, "EXT_IN_SL_04"  ) == 0 ) value = 19;
-    // else if (strcmp(val, "EXT_IN_SL_05"  ) == 0 ) value = 20;
-    // else if (strcmp(val, "EXT_IN_SL_06"  ) == 0 ) value = 21;
-    // else if (strcmp(val, "EXT_IN_SL_07"  ) == 0 ) value = 22;
-    else if (strcmp(val, "SYNC"          ) == 0 ) value = 23;
-    else if (strcmp(val, "EV12"          ) == 0 ) value = 24;
-    else if (strcmp(val, "EV13"          ) == 0 ) value = 25;
-    else if (strcmp(val, "EV14"          ) == 0 ) value = 26;
-    else if (strcmp(val, "EV15"          ) == 0 ) value = 27;
-    // else if (strcmp(val, "EXT_IN_SL_13"  ) == 0 ) value = 28;
-    // else if (strcmp(val, "EXT_IN_SL_14"  ) == 0 ) value = 29;
-    // else if (strcmp(val, "EXT_IN_SL_15"  ) == 0 ) value = 30;
-    // else if (strcmp(val, "EXT_SYNC_01"   ) == 0 ) value = 31;
+    else if (strcmp(val, "EXT_IN_SL_01"  ) == 0 ) value = 16;
+    else if (strcmp(val, "EXT_SYNC_01"   ) == 0 ) value = 31;
     else if (strcmp(val, "none"          ) == 0 ) value =  0;
     else if (strcmp(val, "MASK A0"       ) == 0 ) value =  1;
     else if (strcmp(val, "MASK A1"       ) == 0 ) value =  2;
@@ -466,6 +446,15 @@ asynStatus tsDev_evx::writeString(const RegMap &rmap, const char *val)
     else if (strcmp(val, "MASK B0"       ) == 0 ) value =  5;
     else if (strcmp(val, "MASK B1"       ) == 0 ) value =  6;
     else if (strcmp(val, "MASK B0 and B1") == 0 ) value =  7;
+    else if (strcmp(val, "evCode"        ) == 0 ) value =  0;
+    else if (strcmp(val, "dBus0"         ) == 0 ) value =  1;
+    else if (strcmp(val, "dBus1"         ) == 0 ) value =  2;
+    else if (strcmp(val, "dBus2"         ) == 0 ) value =  3;
+    else if (strcmp(val, "dBus3"         ) == 0 ) value =  4;
+    else if (strcmp(val, "dBus4"         ) == 0 ) value =  5;
+    else if (strcmp(val, "dBus5"         ) == 0 ) value =  6;
+    else if (strcmp(val, "dBus6"         ) == 0 ) value =  7;
+    else if (strcmp(val, "dBus7"         ) == 0 ) value =  8;
   }
   else if(dataType_Config_CPS == rmap.dataType)
   {
