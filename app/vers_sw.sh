@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_sw="f36d112 2021-12-01T00:32:40"
+export ver_sw="3f41e9a 2021-12-21T15:51:18"
 
 : <<'END'
 ================================================================================================================
-commit log 2021-12-01T00:32:40
+commit log 2021-12-21T15:51:18
 ================================================================================================================
-f36d112059848c32a47b41121e04f44ce2136b9e Wed, 1 Dec 2021 00:32:38 +0900, sync, ev12~15 add
-859fabbe110555b8b35f3f5bfe07ddacd6e054ab Tue, 30 Nov 2021 21:27:56 +0900, update sm version info
-b593353890f4c0521501da3fe82ff7e387a80df9 Tue, 30 Nov 2021 21:27:55 +0900, update
-79cd41573174796cfc5484f2c6c7b5eee0b1ab47 Tue, 30 Nov 2021 21:18:28 +0900, update sm version info
-ea79e97fb4453d82752f98a7112782abb689762a Tue, 30 Nov 2021 21:18:27 +0900, update
-e8069f41597185ec36e19bad76589cd508fa5c33 Tue, 30 Nov 2021 21:10:36 +0900, update sm version info
-cd562ebcd786750b5bf8ff7723696f49dc6cbd08 Tue, 30 Nov 2021 21:10:35 +0900, update
-0a2fd518b9e55ac67743e2af7a6f064519ca6e55 Tue, 30 Nov 2021 21:08:10 +0900, update sm version info
-ec405089c9e22f9240618aee329452a124de89bb Tue, 30 Nov 2021 21:08:09 +0900, update
-88f37cc269c6bf7b6a56c81b2fa8571ced85d066 Tue, 30 Nov 2021 21:04:26 +0900, update sm version info
+3f41e9a7fc2f5cfa71e958703df4075e68755672 Tue, 21 Dec 2021 15:51:15 +0900, update app
+25997cc6cf920ee427209c117189b513ff3a6166 Tue, 21 Dec 2021 15:46:04 +0900, update tspv version info
+5136c8eaf1a5c4a0665a8279b1dc6b49e8910d43 Tue, 21 Dec 2021 15:46:01 +0900, pv update2
+0f3335f4ffdf5cfaa397f6815366bc83fa434b07 Tue, 21 Dec 2021 15:18:58 +0900, update tspv version info
+d3251835da1c0b9c3de5f58a85b47521ac31f188 Tue, 21 Dec 2021 15:18:45 +0900, pv update
+6f73a88d819aa47c5e9e92ed6493663c2797b69d Mon, 20 Dec 2021 17:16:47 +0900, update boot version info
+72c82ed61bb30ba6f9acb93eb765b16843c20050 Mon, 20 Dec 2021 17:16:44 +0900, evr & dbus 기능 강화
+f1e05a82d598b277e940d44754d80651e8457dd9 Wed, 1 Dec 2021 02:00:17 +0900, update tspv version info
+91c6529713fa7add99103c1401e951c141a6d0bb Wed, 1 Dec 2021 02:00:15 +0900, pv update
+4415235bd6632e2a5139e57e684ec32e931a591c Wed, 1 Dec 2021 01:51:00 +0900, update boot version info
 
 ================================================================================================================
 END
