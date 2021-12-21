@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_sw="3f41e9a 2021-12-21T15:51:18"
+export ver_sw="dd45805 2021-12-21T18:03:01"
 
 : <<'END'
 ================================================================================================================
-commit log 2021-12-21T15:51:18
+commit log 2021-12-21T18:03:01
 ================================================================================================================
-3f41e9a7fc2f5cfa71e958703df4075e68755672 Tue, 21 Dec 2021 15:51:15 +0900, update app
-25997cc6cf920ee427209c117189b513ff3a6166 Tue, 21 Dec 2021 15:46:04 +0900, update tspv version info
-5136c8eaf1a5c4a0665a8279b1dc6b49e8910d43 Tue, 21 Dec 2021 15:46:01 +0900, pv update2
-0f3335f4ffdf5cfaa397f6815366bc83fa434b07 Tue, 21 Dec 2021 15:18:58 +0900, update tspv version info
-d3251835da1c0b9c3de5f58a85b47521ac31f188 Tue, 21 Dec 2021 15:18:45 +0900, pv update
-6f73a88d819aa47c5e9e92ed6493663c2797b69d Mon, 20 Dec 2021 17:16:47 +0900, update boot version info
-72c82ed61bb30ba6f9acb93eb765b16843c20050 Mon, 20 Dec 2021 17:16:44 +0900, evr & dbus 기능 강화
-f1e05a82d598b277e940d44754d80651e8457dd9 Wed, 1 Dec 2021 02:00:17 +0900, update tspv version info
-91c6529713fa7add99103c1401e951c141a6d0bb Wed, 1 Dec 2021 02:00:15 +0900, pv update
-4415235bd6632e2a5139e57e684ec32e931a591c Wed, 1 Dec 2021 01:51:00 +0900, update boot version info
+dd45805ea4fcb3cfd6308ad07ae1eaaa2ca069e9 Tue, 21 Dec 2021 18:02:59 +0900, evg evs -> ch0,1 input update
+0e887aae106349bb404ead275baa4fc4519224cc Tue, 21 Dec 2021 17:44:07 +0900, update tspv version info
+2fd9a6334929a58a1e9994d6a46fa5d81762e348 Tue, 21 Dec 2021 17:44:06 +0900, evs pv init file change
+0a6ca98fdc6443cef66e2949af9294a70f3942f6 Tue, 21 Dec 2021 17:41:38 +0900, update tspv version info
+0f056889515c0237ad67a09e9778f693f1309ac7 Tue, 21 Dec 2021 17:41:37 +0900, evs pv init file change
+ca30d1f78857a1af331789cb333b6c4da85c1489 Tue, 21 Dec 2021 17:37:05 +0900, update tspv version info
+398bab1b1f3d5a28b8a8e57060bcc007a48adafd Tue, 21 Dec 2021 17:37:04 +0900, evs pv init file change
+62182cad6690767e8e17ac68b1f1c3ce09c457ad Tue, 21 Dec 2021 17:06:07 +0900, update tspv version info
+ed8246e7edf9c1ebd6f212db5301b8ccc681a208 Tue, 21 Dec 2021 17:06:06 +0900, evs pv init file change
+01353510f78879d7d67d260952e15da54999926c Tue, 21 Dec 2021 16:54:18 +0900, update tspv version info
 
 ================================================================================================================
 END
