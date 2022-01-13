@@ -1020,23 +1020,23 @@ void timingAsynEpics::userP_main()
     waveformInitFromFile("EVG1_SEQB_CFG");
     waveformInitFromFile("EVG1_SEQA_TSTAMP");
     waveformInitFromFile("EVG1_SEQB_TSTAMP");
-    waveformInitFromFile("EVR1_MAP_RAM_N");
-    waveformInitFromFile("EVR1_MAP_RAM");
+    // waveformInitFromFile("EVR1_MAP_RAM_N");
+    // waveformInitFromFile("EVR1_MAP_RAM");
 #endif    
   }
-  else if( (pTsDev->tsMode == RAON_EVR) )
-  {
-    waveformInitFromFile("EVR1_MAP_RAM_N");
-    waveformInitFromFile("EVR1_MAP_RAM");
-  }
-  else if( (pTsDev->tsMode == RAON_ZQ9R) )
-  {
-    waveformInitFromFile("EVR0_MAP_RAM_N");
-    waveformInitFromFile("EVR0_MAP_RAM");
-  }
-  else if( (pTsDev->tsMode == RAON_EVF) )
-  {
-  }
+  // else if( (pTsDev->tsMode == RAON_EVR) )
+  // {
+  //   waveformInitFromFile("EVR1_MAP_RAM_N");
+  //   waveformInitFromFile("EVR1_MAP_RAM");
+  // }
+  // else if( (pTsDev->tsMode == RAON_ZQ9R) )
+  // {
+  //   waveformInitFromFile("EVR0_MAP_RAM_N");
+  //   waveformInitFromFile("EVR0_MAP_RAM");
+  // }
+  // else if( (pTsDev->tsMode == RAON_EVF) )
+  // {
+  // }
 #endif
 
 
