@@ -19,11 +19,11 @@ export L_RSRVD5="0"
 export autoStart="1"
 
 export ipAddr="192.168.0.162"
-export serverIp="192.168.0.182"
+export serverIp="192.168.0.161"
 
-export gitServerName="syn"
-export gitServerPD="duruA103\n"
-export gitServerPATH="http://192.168.0.20:30000/laykim/pal_ts.git"
+export gitServerName="root@192.168.0.161:/mnt/sdcard/git_server"
+export gitServerPD="root\n"
+export gitServerPATH="root@192.168.0.161:/mnt/sdcard/git_server"
 export gitBranchName="app_evx1.4"
 export gitProjName="pal_ts"
 
