@@ -206,6 +206,7 @@ start ()
   mkdir /mnt/nfs
   # mount -o nolock ${serverIp}:${wspace} /mnt/nfs
   # chkVer
+  
 
   if [ ${insDrv0} = 1 ]; then insmod ${drv0}; fi
   if [ ${insDrv1} = 1 ]; then insmod ${drv1}; fi
