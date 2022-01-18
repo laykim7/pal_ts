@@ -36,7 +36,7 @@ set timeout 180
 spawn git pull $gitServerName $gitBranchName
 expect {
   "(y/n)"               {send "y\r";            exp_continue}
-  "Username"            {send "laykim\n";       exp_continue}
+  "Username"            {send "root\n";         exp_continue}
   "Password"            {send "$gitServerPD\n"; exp_continue}
   "root@"               {send "\r";             exp_continue}
   "Already up-to-date." {send "\r";             exp_continue}

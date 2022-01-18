@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_sm="b593353 2021-11-30T21:27:56"
+export ver_sm="298d43a 2022-01-18T16:59:29"
 
 : <<'END'
 ================================================================================================================
-commit log 2021-11-30T21:27:56
+commit log 2022-01-18T16:59:29
 ================================================================================================================
-b593353890f4c0521501da3fe82ff7e387a80df9 Tue, 30 Nov 2021 21:27:55 +0900, update
-79cd41573174796cfc5484f2c6c7b5eee0b1ab47 Tue, 30 Nov 2021 21:18:28 +0900, update sm version info
-ea79e97fb4453d82752f98a7112782abb689762a Tue, 30 Nov 2021 21:18:27 +0900, update
-e8069f41597185ec36e19bad76589cd508fa5c33 Tue, 30 Nov 2021 21:10:36 +0900, update sm version info
-cd562ebcd786750b5bf8ff7723696f49dc6cbd08 Tue, 30 Nov 2021 21:10:35 +0900, update
-0a2fd518b9e55ac67743e2af7a6f064519ca6e55 Tue, 30 Nov 2021 21:08:10 +0900, update sm version info
-ec405089c9e22f9240618aee329452a124de89bb Tue, 30 Nov 2021 21:08:09 +0900, update
-88f37cc269c6bf7b6a56c81b2fa8571ced85d066 Tue, 30 Nov 2021 21:04:26 +0900, update sm version info
-c4ec87d4b6a6c1526d1bbd894edc95070d6400ff Tue, 30 Nov 2021 21:04:25 +0900, update
-e199e60f9b3e60b7296296534e62328fc08711a2 Tue, 30 Nov 2021 20:57:27 +0900, update sm version info
+298d43a6f16700fb51bc61bda3293508fddc8c6d Tue, 18 Jan 2022 11:37:16 +0900, remove auto start
+9855e7d233efc8ea8e74f8fcac2c2311ece97e30 Fri, 14 Jan 2022 14:08:01 +0900, sdcard top files upload
+8db84490e948a69de896a5c1e5725a31cb036d31 Thu, 13 Jan 2022 20:51:35 +0900, ..
+e1ae45be6c02c34fbf1eff0fd62431373ad67095 Thu, 13 Jan 2022 20:49:14 +0900, update tspv version info
+6d13520d4ef98085ec8b171bb75fdc606680dc1d Thu, 13 Jan 2022 20:48:51 +0900, update tspv version info
+cc2aa1382618ea4987c80e77027ad6136d7b84b8 Thu, 13 Jan 2022 20:48:35 +0900, update tspv version info
+f30ada5e4b1206d2bcd9feff249923da7f666a2d Thu, 13 Jan 2022 20:48:33 +0900, pv list & init files update
+a1ffe6dfe10f95c86d94678e14ff2a502a1c65da Thu, 13 Jan 2022 19:58:07 +0900, update sw version info
+9a6c397d0769dfc6152a3ee066007ad48067b054 Thu, 13 Jan 2022 19:58:03 +0900, remove evr mapping ram waveform
+8a2b81e6ecdf218bc44fc0364527f4c3f90d5af2 Mon, 27 Dec 2021 15:23:52 +0900, update tspv version info
 
 ================================================================================================================
 END
