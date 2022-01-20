@@ -13,6 +13,7 @@ gitPush()
 
 _update ()
 {
+  rm /c/Users/User/.ssh/known_hosts
   echo ================== git commit start ==================
   git add -A
   git commit -m "$1"
