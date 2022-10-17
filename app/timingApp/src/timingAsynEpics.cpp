@@ -270,7 +270,7 @@ void timingAsynEpics::cfgInitFromFile(string fileName)
     sprintf(pvalue, "%s", pch);
     if(!(pch = strtok (NULL,","))) continue;
 
-    // printf("%s - %s\n", pname, pvalue);
+    printf("cfgInitFromFile -> %s : %s\n", pname, pvalue);
     db_put(pname, pvalue);
   };  
 
@@ -880,6 +880,8 @@ asynStatus timingAsynEpics::db_put(const char *pname, const char *pvalue)
 
   if (addr.dbr_field_type == DBR_CHAR && addr.no_elements > 1) {
 		rtVal = dbPutField(&addr, DBR_CHAR, pvalue, strlen(pvalue) + 1);
+	} else if (addr.dbr_field_type == DBR_LONG) {
+		rtVal = dbPutField(&addr, DBR_LONG, pvalue, 1L);
 	} else {
 		rtVal = dbPutField(&addr, DBR_STRING, pvalue, 1L);
 	}
