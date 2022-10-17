@@ -885,7 +885,7 @@ asynStatus timingAsynEpics::db_put(const char *pname, const char *pvalue)
 	} else if (addr.dbr_field_type == DBR_LONG) {
     printf("db_put DBR_LONG : %s \r\n", pname);
     tmpValue = atoi(pvalue);
-		rtVal = dbPutField(&addr, DBR_LONG, (void*)&tmpValue, 1L);
+		rtVal = dbPutField(&addr, DBR_LONG, (void*)&tmpValue, 2L);
 	} else {
     printf("db_put ELSE : %s \r\n", pname);
 		rtVal = dbPutField(&addr, DBR_STRING, pvalue, 1L);
