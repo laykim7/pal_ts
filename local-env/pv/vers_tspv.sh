@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_tspv="82b7645 2022-10-14T21:47:23"
+export ver_tspv="b4493bf 2022-10-26T16:23:28"
 
 : <<'END'
 ================================================================================================================
-commit log 2022-10-14T21:47:23
+commit log 2022-10-26T16:23:28
 ================================================================================================================
-82b76454276875a4258416468b0e76873aef9029 Fri, 14 Oct 2022 21:47:22 +0900, upload pv init files evs2, evr4~7 update for test
-58b3b63233c63e668bc912a538e30b6f5dc2fdd5 Fri, 14 Oct 2022 21:33:11 +0900, update tspv version info
-a0ecbf11ac62df1c1a7e75a4148b4cda43dd2c96 Fri, 14 Oct 2022 21:33:09 +0900, upload pv init files evs2, evr4~7
-4f86fa39675f6445529c45b221f5d260ece40b4a Fri, 14 Oct 2022 17:54:26 +0900, update sw version info
-c4c2ac7045b21606b79ab4dbc31abb80942eec80 Fri, 14 Oct 2022 17:51:25 +0900, add dev.evx0
-298d43a6f16700fb51bc61bda3293508fddc8c6d Tue, 18 Jan 2022 11:37:16 +0900, remove auto start
-9855e7d233efc8ea8e74f8fcac2c2311ece97e30 Fri, 14 Jan 2022 14:08:01 +0900, sdcard top files upload
-8db84490e948a69de896a5c1e5725a31cb036d31 Thu, 13 Jan 2022 20:51:35 +0900, ..
-e1ae45be6c02c34fbf1eff0fd62431373ad67095 Thu, 13 Jan 2022 20:49:14 +0900, update tspv version info
-6d13520d4ef98085ec8b171bb75fdc606680dc1d Thu, 13 Jan 2022 20:48:51 +0900, update tspv version info
+b4493bf6b2a964b5efb1c11f28ae9b1d11b55f8b Wed, 26 Oct 2022 16:17:55 +0900, io port freq out change 120~0.5
+a42629d74c7a383a7ec34e0253d5f6afe905ce2f Fri, 21 Oct 2022 16:45:09 +0900, pv init update - evcode various freq 120,60,40,30,20,15,12,~
+a3741e1d1433379da1196e21e7326da8bdc2e2c2 Mon, 17 Oct 2022 12:01:00 +0900, pv init update
+0d18126d615cc43190656812ceb426e623cf2b3e Mon, 17 Oct 2022 11:49:16 +0900, update sw version info
+673f716936cba7b1cbb881ba50e87d94fb6d09bd Mon, 17 Oct 2022 11:49:14 +0900, evr map rma init max value bug fix 8
+4f27f7fe1baeb9aaae0476ee2822a5d5584eca2d Mon, 17 Oct 2022 11:46:40 +0900, update sw version info
+e439db1ca717abad830122034b0d8ae7a302bf45 Mon, 17 Oct 2022 11:46:38 +0900, evr map rma init max value bug fix 7
+c34e0e64cc32067aad460aebf4a0156571423f54 Mon, 17 Oct 2022 11:29:43 +0900, update sw version info
+d30a3299dc4f512a66c820f7611c0d55ba3e707c Mon, 17 Oct 2022 11:29:42 +0900, evr map rma init max value bug fix 6
+09fb42f3c186980bb593ad6db50f3daa7eb228e0 Mon, 17 Oct 2022 11:29:22 +0900, update sw version info
 
 ================================================================================================================
 END
