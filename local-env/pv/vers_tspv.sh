@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_tspv="6d13520 2022-01-13T20:49:14"
+export ver_tspv="d03c55d 2022-10-26T16:33:57"
 
 : <<'END'
 ================================================================================================================
-commit log 2022-01-13T20:49:14
+commit log 2022-10-26T16:33:57
 ================================================================================================================
-6d13520d4ef98085ec8b171bb75fdc606680dc1d Thu, 13 Jan 2022 20:48:51 +0900, update tspv version info
-cc2aa1382618ea4987c80e77027ad6136d7b84b8 Thu, 13 Jan 2022 20:48:35 +0900, update tspv version info
-f30ada5e4b1206d2bcd9feff249923da7f666a2d Thu, 13 Jan 2022 20:48:33 +0900, pv list & init files update
-a1ffe6dfe10f95c86d94678e14ff2a502a1c65da Thu, 13 Jan 2022 19:58:07 +0900, update sw version info
-9a6c397d0769dfc6152a3ee066007ad48067b054 Thu, 13 Jan 2022 19:58:03 +0900, remove evr mapping ram waveform
-8a2b81e6ecdf218bc44fc0364527f4c3f90d5af2 Mon, 27 Dec 2021 15:23:52 +0900, update tspv version info
-04beef7f1f292292f4d2d5b73e7d91d990ff7ee8 Mon, 27 Dec 2021 15:23:44 +0900, evf cps pv init value change
-d2feb2c3cd1d24718341758fadd40db05fb52f11 Tue, 21 Dec 2021 18:04:48 +0900, update tspv version info
-955f551b594f06d5060ffbd9aa56f2fb9b151ff9 Tue, 21 Dec 2021 18:04:47 +0900, evs pv init file change
-acbf899b0f50cc0bc6b13db27394cdadd8d2053d Tue, 21 Dec 2021 18:03:01 +0900, update sw version info
+d03c55d9b00f47150f3b2a279e319d4c7047a4d6 Wed, 26 Oct 2022 16:33:55 +0900, update
+4d86f0e09c36e6f9b2a206614f8fd6bebef4e5bf Wed, 26 Oct 2022 16:23:28 +0900, update tspv version info
+b4493bf6b2a964b5efb1c11f28ae9b1d11b55f8b Wed, 26 Oct 2022 16:17:55 +0900, io port freq out change 120~0.5
+a42629d74c7a383a7ec34e0253d5f6afe905ce2f Fri, 21 Oct 2022 16:45:09 +0900, pv init update - evcode various freq 120,60,40,30,20,15,12,~
+a3741e1d1433379da1196e21e7326da8bdc2e2c2 Mon, 17 Oct 2022 12:01:00 +0900, pv init update
+0d18126d615cc43190656812ceb426e623cf2b3e Mon, 17 Oct 2022 11:49:16 +0900, update sw version info
+673f716936cba7b1cbb881ba50e87d94fb6d09bd Mon, 17 Oct 2022 11:49:14 +0900, evr map rma init max value bug fix 8
+4f27f7fe1baeb9aaae0476ee2822a5d5584eca2d Mon, 17 Oct 2022 11:46:40 +0900, update sw version info
+e439db1ca717abad830122034b0d8ae7a302bf45 Mon, 17 Oct 2022 11:46:38 +0900, evr map rma init max value bug fix 7
+c34e0e64cc32067aad460aebf4a0156571423f54 Mon, 17 Oct 2022 11:29:43 +0900, update sw version info
 
 ================================================================================================================
 END

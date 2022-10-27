@@ -270,7 +270,7 @@ void timingAsynEpics::cfgInitFromFile(string fileName)
     sprintf(pvalue, "%s", pch);
     if(!(pch = strtok (NULL,","))) continue;
 
-    // printf("%s - %s\n", pname, pvalue);
+    printf("cfgInitFromFile -> %s : %s\n", pname, pvalue);
     db_put(pname, pvalue);
   };  
 
@@ -856,6 +856,7 @@ asynStatus timingAsynEpics::writeFloat64Array(asynUser *pasynUser, epicsFloat64 
 asynStatus timingAsynEpics::db_put(const char *pname, const char *pvalue)
 {
   long rtVal;
+  long tmpValue;
 	asynStatus status = asynSuccess;
 	DBADDR addr;
 
@@ -879,8 +880,14 @@ asynStatus timingAsynEpics::db_put(const char *pname, const char *pvalue)
 	// } else if (addr.dbr_field_type == DBR_CHAR && addr.no_elements > 1) {
 
   if (addr.dbr_field_type == DBR_CHAR && addr.no_elements > 1) {
+    // printf("db_put DBR_CHAR : %s \r\n", pname);
 		rtVal = dbPutField(&addr, DBR_CHAR, pvalue, strlen(pvalue) + 1);
+	} else if (addr.dbr_field_type == DBR_LONG) {
+    tmpValue = strtoul(pvalue , NULL, 10 );     
+    // printf("db_put DBR_LONG : %s %d\r\n", pname, tmpValue);
+		rtVal = dbPutField(&addr, DBR_LONG, (void*)&tmpValue, 1L);
 	} else {
+    // printf("db_put ELSE : %s \r\n", pname);
 		rtVal = dbPutField(&addr, DBR_STRING, pvalue, 1L);
 	}
   
