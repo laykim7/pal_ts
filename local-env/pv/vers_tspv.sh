@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_tspv="d03c55d 2022-10-26T16:33:57"
+export ver_tspv="d51c0eb 2022-11-08T16:14:06"
 
 : <<'END'
 ================================================================================================================
-commit log 2022-10-26T16:33:57
+commit log 2022-11-08T16:14:06
 ================================================================================================================
-d03c55d9b00f47150f3b2a279e319d4c7047a4d6 Wed, 26 Oct 2022 16:33:55 +0900, update
-4d86f0e09c36e6f9b2a206614f8fd6bebef4e5bf Wed, 26 Oct 2022 16:23:28 +0900, update tspv version info
-b4493bf6b2a964b5efb1c11f28ae9b1d11b55f8b Wed, 26 Oct 2022 16:17:55 +0900, io port freq out change 120~0.5
-a42629d74c7a383a7ec34e0253d5f6afe905ce2f Fri, 21 Oct 2022 16:45:09 +0900, pv init update - evcode various freq 120,60,40,30,20,15,12,~
-a3741e1d1433379da1196e21e7326da8bdc2e2c2 Mon, 17 Oct 2022 12:01:00 +0900, pv init update
-0d18126d615cc43190656812ceb426e623cf2b3e Mon, 17 Oct 2022 11:49:16 +0900, update sw version info
-673f716936cba7b1cbb881ba50e87d94fb6d09bd Mon, 17 Oct 2022 11:49:14 +0900, evr map rma init max value bug fix 8
-4f27f7fe1baeb9aaae0476ee2822a5d5584eca2d Mon, 17 Oct 2022 11:46:40 +0900, update sw version info
-e439db1ca717abad830122034b0d8ae7a302bf45 Mon, 17 Oct 2022 11:46:38 +0900, evr map rma init max value bug fix 7
-c34e0e64cc32067aad460aebf4a0156571423f54 Mon, 17 Oct 2022 11:29:43 +0900, update sw version info
+d51c0ebbbeeab10baeb7aa0e1fe906c2937cc0bd Tue, 8 Nov 2022 16:12:05 +0900, pv val change g, r1,2,3,4
+fc87165ae9352aac80e747b18d2d27f893d8d7d3 Thu, 27 Oct 2022 18:04:58 +0900, pv up
+1b658137f4a24ce90c640f7c2a20124f0b0cbe70 Thu, 27 Oct 2022 17:53:11 +0900, pv up
+0506ef40c70adb8863ea6da28b36a7c35aed35a4 Thu, 27 Oct 2022 17:42:08 +0900, pv up
+1ffbe47ba371e5686c4d5c20f0c4d3a2dea7d9dc Thu, 27 Oct 2022 17:08:04 +0900, pv up
+d8fe93a15f3b7ab81afc202bcf05235b2ced2e7c Thu, 27 Oct 2022 16:45:47 +0900, pv init value update
+286e8dcf22fec22bbf86b6f6e3b512e890074c2b Thu, 27 Oct 2022 15:24:25 +0900, ntp.cfg change 199
+3db37b09db0cf609164135b5cba2a72c5e8b33ec Thu, 27 Oct 2022 14:52:27 +0900, sw 32bit bug fix and 120hz evr port out pv seq update
+e15f8041cc1a318489b25600559fdfaca69834e1 Thu, 20 Jan 2022 21:30:40 +0900, pv init value modify for sync (mxc change number)
+f279d5827c7e0493a21edf25c89bc57e83b51a45 Thu, 20 Jan 2022 21:28:51 +0900, pv init value modify for sync (mxc change number)
 
 ================================================================================================================
 END
