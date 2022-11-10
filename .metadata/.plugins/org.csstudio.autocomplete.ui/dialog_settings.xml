@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="auto_complete_history">
 		<list key="PV">
+			<item value="$(SYS):$(SUBSYS):$(DEV):$(EVRx)_SET_PORT_FREQ"/>
 			<item value="$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_16"/>
 			<item value="$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_15"/>
 			<item value="$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_14"/>

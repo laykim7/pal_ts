@@ -31,7 +31,7 @@
   <show_ruler>true</show_ruler>
   <snap_to_geometry>true</snap_to_geometry>
   <widget_type>Display</widget_type>
-  <width>1420</width>
+  <width>1430</width>
   <wuid>46e72dcf:166aa34d44e:-7d2c</wuid>
   <x>-1</x>
   <y>-1</y>
@@ -92,7 +92,7 @@
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Tabbed Container</widget_type>
-    <width>523</width>
+    <width>469</width>
     <wuid>-455bc37f:1698f70cd79:-70a0</wuid>
     <x>348</x>
     <y>6</y>
@@ -130,9 +130,9 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>521</width>
+      <width>467</width>
       <wuid>-455bc37f:1698f70cd79:-709f</wuid>
       <x>1</x>
       <y>1</y>
@@ -3059,9 +3059,9 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>521</width>
+      <width>467</width>
       <wuid>-1c8a07e9:171777eb0bb:-775b</wuid>
       <x>1</x>
       <y>1</y>
@@ -9272,25 +9272,13 @@ $(pv_value)</tooltip>
     </tab_0_foreground_color>
     <tab_0_icon_path></tab_0_icon_path>
     <tab_0_title>EVR - PDP Config</tab_0_title>
-    <tab_1_background_color>
-      <color red="240" green="240" blue="240" />
-    </tab_1_background_color>
-    <tab_1_enabled>true</tab_1_enabled>
-    <tab_1_font>
-      <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
-    </tab_1_font>
-    <tab_1_foreground_color>
-      <color red="0" green="0" blue="0" />
-    </tab_1_foreground_color>
-    <tab_1_icon_path></tab_1_icon_path>
-    <tab_1_title>EVR - evCode to Trigger Value Config  </tab_1_title>
-    <tab_count>2</tab_count>
+    <tab_count>1</tab_count>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Tabbed Container</widget_type>
-    <width>529</width>
+    <width>601</width>
     <wuid>-594107c7:175771ea0a2:-387a</wuid>
-    <x>876</x>
+    <x>822</x>
     <y>6</y>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -9326,9 +9314,9 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>527</width>
+      <width>599</width>
       <wuid>-594107c7:175771ea0a2:-3879</wuid>
       <x>1</x>
       <y>1</y>
@@ -9368,7 +9356,7 @@ $(pv_value)</tooltip>
         <transparent>false</transparent>
         <visible>true</visible>
         <widget_type>Grouping Container</widget_type>
-        <width>511</width>
+        <width>589</width>
         <wuid>-594107c7:175771ea0a2:-3874</wuid>
         <x>6</x>
         <y>0</y>
@@ -9377,7 +9365,7 @@ $(pv_value)</tooltip>
           <alarm_pulsing>false</alarm_pulsing>
           <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
           <background_color>
-            <color red="240" green="240" blue="240" />
+            <color red="193" green="255" blue="255" />
           </background_color>
           <bit>-1</bit>
           <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -9431,7 +9419,7 @@ $(pv_value)</tooltip>
           <widget_type>Boolean Button</widget_type>
           <width>86</width>
           <wuid>-594107c7:175771ea0a2:-3863</wuid>
-          <x>65</x>
+          <x>53</x>
           <y>754</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -9478,7 +9466,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>78</width>
           <wuid>-594107c7:175771ea0a2:-3862</wuid>
-          <x>392</x>
+          <x>380</x>
           <y>727</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -9518,7 +9506,7 @@ $(pv_value)</tooltip>
           <width>53</width>
           <wrap_words>false</wrap_words>
           <wuid>-594107c7:175771ea0a2:-3861</wuid>
-          <x>345</x>
+          <x>333</x>
           <y>22</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -9575,7 +9563,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3860</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>47</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -9632,7 +9620,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-385f</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>69</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -9689,7 +9677,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-385e</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>91</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -9746,7 +9734,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-385d</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>47</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -9803,7 +9791,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-385c</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>113</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -9860,7 +9848,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-385b</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>135</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -9917,7 +9905,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-385a</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>157</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -9974,7 +9962,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3859</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>179</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10031,7 +10019,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3858</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>201</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10088,7 +10076,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3857</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>223</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10145,7 +10133,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3856</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>245</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10202,7 +10190,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3855</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>267</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10259,7 +10247,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3854</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>289</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10316,7 +10304,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3853</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>311</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10373,7 +10361,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3852</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>333</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10430,7 +10418,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3851</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>355</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10487,7 +10475,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3850</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>377</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10544,7 +10532,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-384f</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>399</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10601,7 +10589,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-384e</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>421</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10658,7 +10646,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-384d</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>443</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10715,7 +10703,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-384c</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>465</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10772,7 +10760,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-384b</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>487</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10829,7 +10817,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-384a</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>509</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10886,7 +10874,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3849</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>531</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -10943,7 +10931,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3848</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>553</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11000,7 +10988,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3847</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>575</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11057,7 +11045,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3846</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>597</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11114,7 +11102,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3845</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>619</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11171,7 +11159,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3844</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>641</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11228,7 +11216,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3843</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>663</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11285,7 +11273,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3842</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>685</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11342,7 +11330,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3841</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>707</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11399,7 +11387,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3840</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>729</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11456,7 +11444,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-383f</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>69</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11513,7 +11501,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-383e</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>91</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11570,7 +11558,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-383d</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>113</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11627,7 +11615,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-383c</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>135</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11684,7 +11672,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-383b</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>157</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11741,7 +11729,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-383a</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>179</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11798,7 +11786,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3839</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>201</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11855,7 +11843,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3838</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>223</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11912,7 +11900,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3837</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>245</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -11969,7 +11957,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3836</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>267</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12026,7 +12014,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3835</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>289</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12083,7 +12071,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3834</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>311</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12140,7 +12128,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3833</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>333</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12197,7 +12185,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3832</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>355</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12254,7 +12242,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3831</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>377</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12311,7 +12299,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3830</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>399</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12368,7 +12356,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-382f</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>421</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12425,7 +12413,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-382e</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>443</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12482,7 +12470,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-382d</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>465</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12539,7 +12527,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-382c</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>487</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12596,7 +12584,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-382b</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>509</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12653,7 +12641,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-382a</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>531</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12710,7 +12698,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3829</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>553</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12767,7 +12755,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3828</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>575</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12824,7 +12812,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3827</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>597</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12881,7 +12869,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3826</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>619</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12938,7 +12926,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3825</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>641</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -12995,7 +12983,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3824</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>663</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -13052,7 +13040,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3823</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>685</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -13109,7 +13097,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3822</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>707</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -13166,7 +13154,7 @@ $(pv_value)</tooltip>
           <widget_type>Text Input</widget_type>
           <width>85</width>
           <wuid>-594107c7:175771ea0a2:-3821</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>729</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
@@ -13225,7 +13213,7 @@ $(pv_value)</tooltip>
           <widget_type>Byte Monitor</widget_type>
           <width>25</width>
           <wuid>-594107c7:175771ea0a2:-3820</wuid>
-          <x>328</x>
+          <x>316</x>
           <y>44</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
@@ -13233,7 +13221,7 @@ $(pv_value)</tooltip>
           <alarm_pulsing>false</alarm_pulsing>
           <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
           <background_color>
-            <color red="240" green="240" blue="240" />
+            <color red="193" green="255" blue="255" />
           </background_color>
           <bit>-1</bit>
           <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -13287,7 +13275,7 @@ $(pv_value)</tooltip>
           <widget_type>Boolean Button</widget_type>
           <width>88</width>
           <wuid>-594107c7:175771ea0a2:-381f</wuid>
-          <x>152</x>
+          <x>140</x>
           <y>754</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -13328,7 +13316,7 @@ $(pv_value)</tooltip>
           <widget_type>Grouping Container</widget_type>
           <width>19</width>
           <wuid>-594107c7:175771ea0a2:-381e</wuid>
-          <x>374</x>
+          <x>362</x>
           <y>46</y>
           <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
             <actions hook="false" hook_all="false" />
@@ -14649,7 +14637,7 @@ $(pv_value)</tooltip>
           <widget_type>Grouping Container</widget_type>
           <width>39</width>
           <wuid>-594107c7:175771ea0a2:-37fd</wuid>
-          <x>416</x>
+          <x>404</x>
           <y>46</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -14707,7 +14695,7 @@ $(pv_value)</tooltip>
           <widget_type>LED</widget_type>
           <width>20</width>
           <wuid>-594107c7:175771ea0a2:-37fb</wuid>
-          <x>434</x>
+          <x>422</x>
           <y>707</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -14754,7 +14742,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>44</width>
           <wuid>-594107c7:175771ea0a2:-37fa</wuid>
-          <x>392</x>
+          <x>380</x>
           <y>705</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -14795,7 +14783,7 @@ $(pv_value)</tooltip>
           <widget_type>Grouping Container</widget_type>
           <width>49</width>
           <wuid>-594107c7:175771ea0a2:-37f9</wuid>
-          <x>460</x>
+          <x>448</x>
           <y>21</y>
           <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
             <actions hook="false" hook_all="false" />
@@ -16262,7 +16250,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37d5</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>727</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16309,7 +16297,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37d4</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>551</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16356,7 +16344,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37d3</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>705</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16403,7 +16391,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37d2</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>177</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16450,7 +16438,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37d1</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>89</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16497,7 +16485,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37d0</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>595</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16544,7 +16532,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37cf</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>661</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16591,7 +16579,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37ce</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>441</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16638,7 +16626,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37cd</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>45</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16685,7 +16673,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37cc</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>639</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16732,7 +16720,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37cb</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>309</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16779,7 +16767,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37ca</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>287</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16826,7 +16814,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c9</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>67</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16873,7 +16861,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c8</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>375</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16920,7 +16908,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c7</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>683</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -16967,7 +16955,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c6</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>221</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17014,7 +17002,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c5</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>419</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17061,7 +17049,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c4</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>331</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17108,7 +17096,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c3</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>507</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17155,7 +17143,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c2</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>199</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17202,7 +17190,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c1</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>485</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17249,7 +17237,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37c0</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>529</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17296,7 +17284,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37bf</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>617</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17343,7 +17331,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37be</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>133</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17390,7 +17378,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37bd</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>573</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17437,7 +17425,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37bc</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>155</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17484,7 +17472,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37bb</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>265</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17531,7 +17519,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37ba</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>353</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17578,7 +17566,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37b9</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>397</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17625,7 +17613,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37b8</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>463</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17672,7 +17660,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37b7</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>111</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
@@ -17719,7 +17707,7 @@ $(pv_value)</tooltip>
           <widget_type>Check Box</widget_type>
           <width>21</width>
           <wuid>-594107c7:175771ea0a2:-37b6</wuid>
-          <x>354</x>
+          <x>342</x>
           <y>243</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -17759,7 +17747,7 @@ $(pv_value)</tooltip>
           <width>91</width>
           <wrap_words>false</wrap_words>
           <wuid>-594107c7:175771ea0a2:-37a6</wuid>
-          <x>397</x>
+          <x>385</x>
           <y>22</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -17800,7 +17788,7 @@ $(pv_value)</tooltip>
           <widget_type>Grouping Container</widget_type>
           <width>39</width>
           <wuid>-594107c7:175771ea0a2:-37a5</wuid>
-          <x>397</x>
+          <x>385</x>
           <y>46</y>
           <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
             <actions hook="false" hook_all="false" />
@@ -18217,7 +18205,7 @@ $(pv_value)</tooltip>
           <widget_type>Grouping Container</widget_type>
           <width>171</width>
           <wuid>-594107c7:175771ea0a2:-378c</wuid>
-          <x>66</x>
+          <x>54</x>
           <y>6</y>
           <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
             <actions hook="false" hook_all="false" />
@@ -18340,7 +18328,7 @@ $(pv_value)</tooltip>
           <widget_type>Grouping Container</widget_type>
           <width>25</width>
           <wuid>-594107c7:175771ea0a2:-31e4</wuid>
-          <x>36</x>
+          <x>24</x>
           <y>40</y>
           <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
             <actions hook="false" hook_all="false" />
@@ -20365,7 +20353,7 @@ $(pv_value)</tooltip>
           <widget_type>Grouping Container</widget_type>
           <width>25</width>
           <wuid>-594107c7:175771ea0a2:-2ed2</wuid>
-          <x>12</x>
+          <x>0</x>
           <y>40</y>
           <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
             <actions hook="false" hook_all="false" />
@@ -22391,7 +22379,7 @@ $(pv_value)</tooltip>
           <widget_type>Grouping Container</widget_type>
           <width>90</width>
           <wuid>-35ff99a:17ddae1022c:-77be</wuid>
-          <x>239</x>
+          <x>227</x>
           <y>6</y>
           <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
             <actions hook="false" hook_all="false" />
@@ -22428,10 +22416,10 @@ Source Select</text>
             <vertical_alignment>1</vertical_alignment>
             <visible>true</visible>
             <widget_type>Label</widget_type>
-            <width>85</width>
+            <width>84</width>
             <wrap_words>false</wrap_words>
             <wuid>-35ff99a:17ddae1022c:-77c2</wuid>
-            <x>2</x>
+            <x>1</x>
             <y>0</y>
           </widget>
           <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
@@ -24131,1006 +24119,10 @@ $(pv_value)</tooltip>
             <y>719</y>
           </widget>
         </widget>
-      </widget>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <background_color>
-        <color red="240" green="240" blue="240" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fc>false</fc>
-      <font>
-        <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
-      <height>788</height>
-      <lock_children>false</lock_children>
-      <macros>
-        <include_parent_macros>true</include_parent_macros>
-      </macros>
-      <name>EVR - evCode to Trigger Value Config  </name>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <show_scrollbar>true</show_scrollbar>
-      <tooltip></tooltip>
-      <transparent>true</transparent>
-      <visible>true</visible>
-      <widget_type>Grouping Container</widget_type>
-      <width>527</width>
-      <wuid>-4b8d3527:17e5242f074:-6b3a</wuid>
-      <x>1</x>
-      <y>1</y>
-      <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <background_color>
-          <color red="240" green="240" blue="240" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <fc>false</fc>
-        <font>
-          <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>403</height>
-        <lock_children>false</lock_children>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <EVX_PVNAME>EVR1_MAP_RAM</EVX_PVNAME>
-        </macros>
-        <name>Grouping Container_4</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_scrollbar>false</show_scrollbar>
-        <tooltip></tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Grouping Container</widget_type>
-        <width>499</width>
-        <wuid>-4b8d3527:17e5242f074:-44f1</wuid>
-        <x>12</x>
-        <y>18</y>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+        <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
           <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
           <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_40</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_1</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44f0</wuid>
-          <x>108</x>
-          <y>24</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_41</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_2</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44ef</wuid>
-          <x>108</x>
-          <y>46</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_42</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_3</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44ee</wuid>
-          <x>108</x>
-          <y>68</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_43</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_4</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44ed</wuid>
-          <x>108</x>
-          <y>90</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_44</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_5</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44ec</wuid>
-          <x>108</x>
-          <y>112</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_45</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_6</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44eb</wuid>
-          <x>108</x>
-          <y>134</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_46</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_7</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44ea</wuid>
-          <x>108</x>
-          <y>156</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_47</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_8</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e9</wuid>
-          <x>108</x>
-          <y>178</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_48</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_9</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e8</wuid>
-          <x>108</x>
-          <y>200</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_49</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_10</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e7</wuid>
-          <x>108</x>
-          <y>222</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_50</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_11</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e6</wuid>
-          <x>108</x>
-          <y>244</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_51</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_12</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e5</wuid>
-          <x>108</x>
-          <y>266</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_52</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_13</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e4</wuid>
-          <x>108</x>
-          <y>288</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_53</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_14</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e3</wuid>
-          <x>108</x>
-          <y>310</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_54</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_15</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e2</wuid>
-          <x>108</x>
-          <y>332</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>3</border_style>
-          <border_width>1</border_width>
-          <confirm_message></confirm_message>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <format_type>3</format_type>
-          <height>20</height>
-          <horizontal_alignment>0</horizontal_alignment>
-          <limits_from_pv>false</limits_from_pv>
-          <maximum>1.7976931348623157E308</maximum>
-          <minimum>-1.7976931348623157E308</minimum>
-          <multiline_input>false</multiline_input>
-          <name>Text Input_55</name>
-          <precision>0</precision>
-          <precision_from_pv>true</precision_from_pv>
-          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVX_PVNAME)_16</pv_name>
-          <pv_value />
-          <rotation_angle>0.0</rotation_angle>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <selector_type>0</selector_type>
-          <show_units>true</show_units>
-          <style>0</style>
-          <text></text>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparent>false</transparent>
-          <visible>true</visible>
-          <widget_type>Text Input</widget_type>
-          <width>199</width>
-          <wuid>-4b8d3527:17e5242f074:-44e1</wuid>
-          <x>108</x>
-          <y>354</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
+            <color red="240" green="240" blue="240" />
           </background_color>
           <border_color>
             <color red="0" green="128" blue="255" />
@@ -25138,15 +24130,20 @@ $(pv_value)</tooltip>
           <border_style>0</border_style>
           <border_width>1</border_width>
           <enabled>true</enabled>
+          <fc>false</fc>
           <font>
             <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
           </font>
           <foreground_color>
-            <color red="0" green="0" blue="0" />
+            <color red="192" green="192" blue="192" />
           </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <name>Label_25</name>
+          <height>746</height>
+          <lock_children>true</lock_children>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <PVN>EVR1_PORTFREQ</PVN>
+          </macros>
+          <name>Grouping Container_15</name>
           <rules />
           <scale_options>
             <width_scalable>true</width_scalable>
@@ -25154,657 +24151,2046 @@ $(pv_value)</tooltip>
             <keep_wh_ratio>false</keep_wh_ratio>
           </scale_options>
           <scripts />
-          <text>Trigger Port Config [HEX]</text>
+          <show_scrollbar>false</show_scrollbar>
           <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
+          <transparent>false</transparent>
           <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>241</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44e0</wuid>
-          <x>84</x>
-          <y>0</y>
+          <widget_type>Grouping Container</widget_type>
+          <width>90</width>
+          <wuid>2d4c0765:1845ad4b5f3:-79d6</wuid>
+          <x>490</x>
+          <y>6</y>
+          <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <auto_size>false</auto_size>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>39</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <name>Label_25</name>
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>false</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <text> evCode&#xD;
+Frequency</text>
+            <tooltip></tooltip>
+            <transparent>true</transparent>
+            <vertical_alignment>1</vertical_alignment>
+            <visible>true</visible>
+            <widget_type>Label</widget_type>
+            <width>84</width>
+            <wrap_words>false</wrap_words>
+            <wuid>2d4c0765:1845ad4b5f3:-79d5</wuid>
+            <x>1</x>
+            <y>0</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_0</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79d4</wuid>
+            <x>0</x>
+            <y>37</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_1</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_1</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79d3</wuid>
+            <x>0</x>
+            <y>59</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_2</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_2</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79d2</wuid>
+            <x>0</x>
+            <y>81</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_3</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_3</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79d1</wuid>
+            <x>0</x>
+            <y>103</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_4</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_4</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79d0</wuid>
+            <x>0</x>
+            <y>125</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_5</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_5</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79cf</wuid>
+            <x>0</x>
+            <y>147</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_6</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_6</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79ce</wuid>
+            <x>0</x>
+            <y>169</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_7</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_7</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79cd</wuid>
+            <x>0</x>
+            <y>191</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_8</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_8</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79cc</wuid>
+            <x>0</x>
+            <y>213</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_9</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_9</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79cb</wuid>
+            <x>0</x>
+            <y>235</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_10</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_10</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79ca</wuid>
+            <x>0</x>
+            <y>257</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_11</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_11</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c9</wuid>
+            <x>0</x>
+            <y>279</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_12</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_12</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c8</wuid>
+            <x>0</x>
+            <y>301</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_13</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_13</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c7</wuid>
+            <x>0</x>
+            <y>323</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_14</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_14</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c6</wuid>
+            <x>0</x>
+            <y>345</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_15</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_15</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c5</wuid>
+            <x>0</x>
+            <y>367</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_16</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_16</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c4</wuid>
+            <x>0</x>
+            <y>389</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_17</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_17</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c3</wuid>
+            <x>0</x>
+            <y>411</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_18</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_18</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c2</wuid>
+            <x>0</x>
+            <y>433</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_19</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_19</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c1</wuid>
+            <x>0</x>
+            <y>455</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_20</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_20</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79c0</wuid>
+            <x>0</x>
+            <y>477</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_21</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_21</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79bf</wuid>
+            <x>0</x>
+            <y>499</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_22</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_22</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79be</wuid>
+            <x>0</x>
+            <y>521</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_23</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_23</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79bd</wuid>
+            <x>0</x>
+            <y>543</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_24</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_24</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79bc</wuid>
+            <x>0</x>
+            <y>565</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_25</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_25</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79bb</wuid>
+            <x>0</x>
+            <y>587</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_26</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_26</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79ba</wuid>
+            <x>0</x>
+            <y>609</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_27</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_27</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79b9</wuid>
+            <x>0</x>
+            <y>631</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_28</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_28</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79b8</wuid>
+            <x>0</x>
+            <y>653</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_29</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_29</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79b7</wuid>
+            <x>0</x>
+            <y>675</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_30</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_30</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79b6</wuid>
+            <x>0</x>
+            <y>697</y>
+          </widget>
+          <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+            <actions hook="false" hook_all="false" />
+            <alarm_pulsing>false</alarm_pulsing>
+            <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+            <background_color>
+              <color red="255" green="255" blue="255" />
+            </background_color>
+            <border_alarm_sensitive>true</border_alarm_sensitive>
+            <border_color>
+              <color red="0" green="128" blue="255" />
+            </border_color>
+            <border_style>0</border_style>
+            <border_width>1</border_width>
+            <enabled>true</enabled>
+            <font>
+              <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+            </font>
+            <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+            <foreground_color>
+              <color red="0" green="0" blue="0" />
+            </foreground_color>
+            <height>27</height>
+            <items>
+              <s>120 Hz</s>
+              <s>60 Hz</s>
+              <s>40 Hz</s>
+              <s>30 Hz</s>
+              <s>20 Hz</s>
+              <s>15 Hz</s>
+              <s>10 Hz</s>
+              <s>8 Hz</s>
+              <s>6 Hz</s>
+              <s>5 Hz</s>
+              <s>4 Hz</s>
+              <s>3 Hz</s>
+              <s>2 Hz</s>
+              <s>1 Hz</s>
+              <s>0.5 Hz</s>
+              <s>None</s>
+            </items>
+            <items_from_pv>false</items_from_pv>
+            <name>Combo_31</name>
+            <pv_name>$(SYS):$(SUBSYS):$(DEV):$(PVN)_31</pv_name>
+            <pv_value />
+            <rules />
+            <scale_options>
+              <width_scalable>true</width_scalable>
+              <height_scalable>true</height_scalable>
+              <keep_wh_ratio>true</keep_wh_ratio>
+            </scale_options>
+            <scripts />
+            <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+            <visible>true</visible>
+            <widget_type>Combo</widget_type>
+            <width>90</width>
+            <wuid>2d4c0765:1845ad4b5f3:-79b5</wuid>
+            <x>0</x>
+            <y>719</y>
+          </widget>
         </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
+        <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+          <actions hook="false" hook_all="false">
+            <action type="WRITE_PV">
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+              <timeout>10</timeout>
+              <confirm_message></confirm_message>
+              <description></description>
+            </action>
+          </actions>
+          <alarm_pulsing>false</alarm_pulsing>
+          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
           <background_color>
-            <color red="255" green="255" blue="255" />
+            <color red="193" green="255" blue="255" />
           </background_color>
+          <bit>-1</bit>
+          <border_alarm_sensitive>true</border_alarm_sensitive>
           <border_color>
             <color red="0" green="128" blue="255" />
           </border_color>
           <border_style>0</border_style>
           <border_width>1</border_width>
+          <confirm_message>Are you sure you want to do this?</confirm_message>
+          <data_type>0</data_type>
+          <effect_3d>true</effect_3d>
           <enabled>true</enabled>
           <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
+            <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
           </font>
+          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_1</name>
+          <height>24</height>
+          <labels_from_pv>false</labels_from_pv>
+          <name>Boolean Button_6</name>
+          <off_color>
+            <color red="0" green="100" blue="0" />
+          </off_color>
+          <off_label>SET FREQ</off_label>
+          <on_color>
+            <color red="0" green="255" blue="0" />
+          </on_color>
+          <on_label>SET FREQ</on_label>
+          <password></password>
+          <push_action_index>0</push_action_index>
+          <pv_name>$(SYS):$(SUBSYS):$(DEV):$(EVRx)_SET_PORT_FREQ</pv_name>
+          <pv_value />
+          <released_action_index>0</released_action_index>
           <rules />
           <scale_options>
             <width_scalable>true</width_scalable>
             <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
+            <keep_wh_ratio>true</keep_wh_ratio>
           </scale_options>
           <scripts />
-          <text>evCode - 01</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
+          <show_boolean_label>true</show_boolean_label>
+          <show_confirm_dialog>0</show_confirm_dialog>
+          <show_led>false</show_led>
+          <square_button>true</square_button>
+          <toggle_button>false</toggle_button>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
           <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44df</wuid>
-          <x>0</x>
-          <y>23</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_2</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 02</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44de</wuid>
-          <x>0</x>
-          <y>45</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_3</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 03</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44dd</wuid>
-          <x>0</x>
-          <y>67</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_4</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 04</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44dc</wuid>
-          <x>0</x>
-          <y>89</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_5</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 05</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44db</wuid>
-          <x>0</x>
-          <y>111</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_6</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 06</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44da</wuid>
-          <x>0</x>
-          <y>133</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_7</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 07</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d9</wuid>
-          <x>0</x>
-          <y>155</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_8</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 08</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d8</wuid>
-          <x>0</x>
-          <y>177</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_9</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 09</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d7</wuid>
-          <x>0</x>
-          <y>199</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_10</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 10</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d6</wuid>
-          <x>0</x>
-          <y>221</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_11</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 11</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d5</wuid>
-          <x>0</x>
-          <y>243</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_12</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 12</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d4</wuid>
-          <x>0</x>
-          <y>265</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_13</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 13</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d3</wuid>
-          <x>0</x>
-          <y>287</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_14</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 14</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d2</wuid>
-          <x>0</x>
-          <y>309</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_15</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 15</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d1</wuid>
-          <x>0</x>
-          <y>331</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <auto_size>false</auto_size>
-          <background_color>
-            <color red="255" green="255" blue="255" />
-          </background_color>
-          <border_color>
-            <color red="0" green="128" blue="255" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>1</border_width>
-          <enabled>true</enabled>
-          <font>
-            <fontdata fontName="Consolas" height="9" style="0" pixels="false" />
-          </font>
-          <foreground_color>
-            <color red="0" green="0" blue="0" />
-          </foreground_color>
-          <height>21</height>
-          <horizontal_alignment>2</horizontal_alignment>
-          <name>Label_16</name>
-          <rules />
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <text>evCode - 16</text>
-          <tooltip></tooltip>
-          <transparent>true</transparent>
-          <vertical_alignment>1</vertical_alignment>
-          <visible>true</visible>
-          <widget_type>Label</widget_type>
-          <width>97</width>
-          <wrap_words>false</wrap_words>
-          <wuid>-4b8d3527:17e5242f074:-44d0</wuid>
-          <x>0</x>
-          <y>353</y>
+          <widget_type>Boolean Button</widget_type>
+          <width>86</width>
+          <wuid>-1f1c1bf5:1845feaa198:-7d82</wuid>
+          <x>492</x>
+          <y>754</y>
         </widget>
       </widget>
     </widget>
@@ -29748,7 +30134,7 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>523</width>
+    <width>469</width>
     <wuid>-4b8d3527:17e5242f074:-5640</wuid>
     <x>348</x>
     <y>828</y>
@@ -29789,7 +30175,7 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wrap_words>false</wrap_words>
       <wuid>-1c8a60d1:16994e2e285:-3c94</wuid>
-      <x>270</x>
+      <x>218</x>
       <y>25</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -29841,7 +30227,7 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wrap_words>false</wrap_words>
       <wuid>361259a7:169989ae857:dfe</wuid>
-      <x>396</x>
+      <x>344</x>
       <y>25</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -29938,7 +30324,7 @@ $(pv_value)</tooltip>
       <widget_type>Text Input</widget_type>
       <width>120</width>
       <wuid>7ea4b65e:169c2bffc73:-68ab</wuid>
-      <x>396</x>
+      <x>344</x>
       <y>0</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -29978,7 +30364,7 @@ $(pv_value)</tooltip>
       <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>7ea4b65e:169c2bffc73:-68aa</wuid>
-      <x>310</x>
+      <x>258</x>
       <y>0</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
@@ -30288,7 +30674,7 @@ $(pv_value)</tooltip>
       <widget_type>Boolean Button</widget_type>
       <width>220</width>
       <wuid>4821f8ce:166bede2f0c:-7882</wuid>
-      <x>296</x>
+      <x>244</x>
       <y>99</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -30328,7 +30714,7 @@ $(pv_value)</tooltip>
       <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>-4de3fc4e:166c99a9cb2:-1ed0</wuid>
-      <x>211</x>
+      <x>159</x>
       <y>53</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -30368,7 +30754,7 @@ $(pv_value)</tooltip>
       <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>46e72dcf:166aa34d44e:-7014</wuid>
-      <x>211</x>
+      <x>159</x>
       <y>76</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -30425,7 +30811,7 @@ $(pv_value)</tooltip>
       <widget_type>Text Input</widget_type>
       <width>100</width>
       <wuid>46e72dcf:166aa34d44e:-75d1</wuid>
-      <x>296</x>
+      <x>244</x>
       <y>76</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
@@ -30487,7 +30873,7 @@ $(pv_value)</tooltip>
       <widget_type>Boolean Button</widget_type>
       <width>120</width>
       <wuid>-399a791b:166b32e30c4:-6442</wuid>
-      <x>396</x>
+      <x>344</x>
       <y>76</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -30539,7 +30925,7 @@ $(pv_value)</tooltip>
       <width>100</width>
       <wrap_words>false</wrap_words>
       <wuid>46e72dcf:166aa34d44e:-6e2e</wuid>
-      <x>296</x>
+      <x>244</x>
       <y>53</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
@@ -30601,7 +30987,7 @@ $(pv_value)</tooltip>
       <widget_type>Boolean Button</widget_type>
       <width>120</width>
       <wuid>4821f8ce:166bede2f0c:-741b</wuid>
-      <x>396</x>
+      <x>344</x>
       <y>53</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
@@ -30703,9 +31089,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>529</width>
+    <width>601</width>
     <wuid>-594107c7:175771ea0a2:-3873</wuid>
-    <x>876</x>
+    <x>822</x>
     <y>828</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -30744,8 +31130,8 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wrap_words>false</wrap_words>
       <wuid>-594107c7:175771ea0a2:-3870</wuid>
-      <x>270</x>
-      <y>73</y>
+      <x>186</x>
+      <y>98</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -30784,8 +31170,8 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wrap_words>false</wrap_words>
       <wuid>-594107c7:175771ea0a2:-386f</wuid>
-      <x>270</x>
-      <y>51</y>
+      <x>186</x>
+      <y>76</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -30836,8 +31222,8 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wrap_words>false</wrap_words>
       <wuid>-594107c7:175771ea0a2:-386d</wuid>
-      <x>396</x>
-      <y>51</y>
+      <x>312</x>
+      <y>76</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -30888,8 +31274,8 @@ $(pv_value)</tooltip>
       <width>120</width>
       <wrap_words>false</wrap_words>
       <wuid>-594107c7:175771ea0a2:-386b</wuid>
-      <x>396</x>
-      <y>73</y>
+      <x>312</x>
+      <y>98</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
       <actions hook="false" hook_all="false" />
@@ -30945,8 +31331,8 @@ $(pv_value)</tooltip>
       <widget_type>Text Input</widget_type>
       <width>120</width>
       <wuid>-594107c7:175771ea0a2:-386a</wuid>
-      <x>396</x>
-      <y>6</y>
+      <x>312</x>
+      <y>31</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -30985,8 +31371,8 @@ $(pv_value)</tooltip>
       <width>80</width>
       <wrap_words>false</wrap_words>
       <wuid>-594107c7:175771ea0a2:-3869</wuid>
-      <x>310</x>
-      <y>6</y>
+      <x>226</x>
+      <y>31</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -31276,5 +31662,59 @@ $(pv_value)</tooltip>
       <x>30</x>
       <y>96</y>
     </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="181" blue="181" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>49</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(SYS):$(SUBSYS):$(DEV):SAVE_CFG</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>S A V E</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>329</width>
+    <wuid>2d4c0765:1845ad4b5f3:-7921</wuid>
+    <x>12</x>
+    <y>714</y>
   </widget>
 </display>
