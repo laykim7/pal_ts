@@ -1,4 +1,4 @@
-## ver = 44875.6377273148
+## ver = 44875.7548037037
 
 file "db/bi.template"{ pattern
 {SYS, SUBSYS, DEV, PORT, ADDR, TIMEOUT, SIGNAL, ALIAS, FLNK, SCAN}
@@ -1557,7 +1557,6 @@ file "db/stringin.template"{ pattern
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_SYS_VCCINT, xIPx_SYS_VCCINT, "", "1 second"}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_SYS_VCCPINT, xIPx_SYS_VCCPINT, "", "1 second"}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_SYS_TEMP, xIPx_SYS_TEMP, "", "1 second"}
-{NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_SYS_SAVE_CFG, xIPx_SYS_SAVE_CFG, "", "1 second"}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_EV_ISMASTER, xIPx_EV_ISMASTER, "", "I/O Intr"}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_EV_CPLLLOCK_1, xIPx_EV_CPLLLOCK_1, "", "1 second"}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_EV_RXFSMRESETDONE_1, xIPx_EV_RXFSMRESETDONE_1, "", "1 second"}
@@ -1581,6 +1580,7 @@ file "db/stringin.template"{ pattern
 file "db/stringout.template"{ pattern
 {SYS, SUBSYS, DEV, PORT, ADDR, TIMEOUT, SIGNAL, ALIAS, PINI, VAL, FLNK}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_SYS_P_RUN, xIPx_SYS_P_RUN, "YES", "STOP", ""}
+{NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_SYS_SAVE_CFG, xIPx_SYS_SAVE_CFG, "NO", 0, ""}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_EV_CPS_CTL_GT0, xIPx_EV_CPS_CTL_GT0, "YES", 0, ""}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_EV_CPS_CTL_GT1, xIPx_EV_CPS_CTL_GT1, "YES", 0, ""}
 {NEW_SYS, NEW_SUB_SYS, NEW_DEV_N, timing, 0, 1, xIPx_EV_CPS_CTL_FMC1, xIPx_EV_CPS_CTL_FMC1, "YES", 0, ""}
