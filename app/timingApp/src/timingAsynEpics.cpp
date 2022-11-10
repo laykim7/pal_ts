@@ -1312,6 +1312,7 @@ asynStatus timingAsynEpics::writeOctet(asynUser *pasynUser, const char *value, s
     if (status != asynSuccess) return(status);
   }
   else{
+    printf("call cfgSaveToFile\r\n");
     cfgSaveToFile();
   }
   
