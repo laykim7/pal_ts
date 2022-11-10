@@ -198,6 +198,41 @@ asynStatus tsDev_evx::writeAppData(uint offset, uint val)
                       ev[0]->set_cpsConfig(&ev[0]->sh); 
                     break;
 
+    case 0x1040   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  0, val); break;
+    case 0x1041   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  1, val); break;
+    case 0x1042   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  2, val); break;
+    case 0x1043   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  3, val); break;
+    case 0x1044   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  4, val); break;
+    case 0x1045   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  5, val); break;
+    case 0x1046   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  6, val); break;
+    case 0x1047   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  7, val); break;
+    case 0x1048   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  8, val); break;
+    case 0x1049   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq(  9, val); break;
+    case 0x104a   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 10, val); break;
+    case 0x104b   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 11, val); break;
+    case 0x104c   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 12, val); break;
+    case 0x104d   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 13, val); break;
+    case 0x104e   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 14, val); break;
+    case 0x104f   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 15, val); break;
+    case 0x1050   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 16, val); break;
+    case 0x1051   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 17, val); break;
+    case 0x1052   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 18, val); break;
+    case 0x1053   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 19, val); break;
+    case 0x1054   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 20, val); break;
+    case 0x1055   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 21, val); break;
+    case 0x1056   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 22, val); break;
+    case 0x1057   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 23, val); break;
+    case 0x1058   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 24, val); break;
+    case 0x1059   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 25, val); break;
+    case 0x105a   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 26, val); break;
+    case 0x105b   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 27, val); break;
+    case 0x105c   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 28, val); break;
+    case 0x105d   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 29, val); break;
+    case 0x105e   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 30, val); break;
+    case 0x105f   : if(evrMain == NULL){return asynError;} evrMain->cfg_portFreq( 31, val); break;
+
+    case 0x1060   : if(evrMain == NULL){return asynError;} evrMain->set_evCodeList(); break;
+
     case 0x1100   : if(ev[0] == NULL){return asynError;} bist(val); break;
 
     default    : status = asynError; break;
@@ -481,6 +516,26 @@ asynStatus tsDev_evx::writeString(const RegMap &rmap, const char *val)
     else if (strcmp(val, "09"   ) == 0 ) value = 13;
     else if (strcmp(val, "10"   ) == 0 ) value = 14;
     else if (strcmp(val, "11"   ) == 0 ) value = 15;
+  }
+  else if(dataType_PortFreq == rmap.dataType)
+  {
+    if      (strcmp(val, "120 Hz") == 0 ) value = 16;
+    else if (strcmp(val, "60 Hz" ) == 0 ) value = 15;
+    else if (strcmp(val, "40 Hz" ) == 0 ) value = 14;
+    else if (strcmp(val, "30 Hz" ) == 0 ) value = 13;
+    else if (strcmp(val, "20 Hz" ) == 0 ) value = 12;
+    else if (strcmp(val, "15 Hz" ) == 0 ) value = 11;
+    else if (strcmp(val, "12 Hz" ) == 0 ) value = 10;
+    else if (strcmp(val, "10 Hz" ) == 0 ) value =  9;
+    else if (strcmp(val, "8 Hz"  ) == 0 ) value =  8;
+    else if (strcmp(val, "6 Hz"  ) == 0 ) value =  7;
+    else if (strcmp(val, "5 Hz"  ) == 0 ) value =  6;
+    else if (strcmp(val, "4 Hz"  ) == 0 ) value =  5;
+    else if (strcmp(val, "3 Hz"  ) == 0 ) value =  4;
+    else if (strcmp(val, "2 Hz"  ) == 0 ) value =  3;
+    else if (strcmp(val, "1 Hz"  ) == 0 ) value =  2;
+    else if (strcmp(val, "0.5 Hz") == 0 ) value =  1;
+    else if (strcmp(val, "None"  ) == 0 ) value =  0;
   }
 
   prnM2("writeString : %s - %d\r\n", val, value);

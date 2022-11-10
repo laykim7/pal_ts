@@ -49,17 +49,19 @@ using namespace std;
 
 //================================================
 // dataType :
-#define dataType_Nomal      0	
-#define dataType_Config_CPS 1	
-#define dataType_Trg_Seq    2	
-#define dataType_Pulse      3	
-#define dataType_GetSet     4	
-#define dataType_TimeYDMS   5	//(year day min sec)
-#define dataType_TimeYDMS64 6	//(year day min sec ms ns, 64bit time)
-#define dataType_TimeYMDMS  7	//(year month day min sec)
+#define dataType_Nomal         0	
+#define dataType_Config_CPS    1	
+#define dataType_Trg_Seq       2	
+#define dataType_Pulse         3	
+#define dataType_GetSet        4	
+#define dataType_TimeYDMS      5     //(year day min sec)
+#define dataType_TimeYDMS64    6     //(year day min sec ms ns, 64bit time)
+#define dataType_TimeYMDMS     7     //(year month day min sec)
 #define dataType_Waveform_int  8	
 #define dataType_Waveform_f32  9	
 #define dataType_Waveform_f64  10	
+#define dataType_PortFreq      11	   // port freq config type add 2022.11.08
+#define dataType_pvValSaveCmd  12	   // pv value save to ini file command add 2022.11.08
 
 //================================================
 // addrType :

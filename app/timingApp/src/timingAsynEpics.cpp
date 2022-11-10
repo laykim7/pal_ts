@@ -24,6 +24,7 @@
 #include <waveformRecord.h>
 /* for DB put *********/
 
+#include "iniparser.hpp"
 #include "timingAsynEpics.h"
 
 //#define tUpdate
@@ -130,6 +131,7 @@ timingAsynEpics::timingAsynEpics( const char *portName, int maxSizeSnapshot, int
   sprintf(sysDevName, "%s:%s:%s", deviceSys, deviceSubSys, pTsDev->tsName);
   sprintf(iValFileName, "%s/pv/%s.initValue/%s.%s.%s.", pvInitVal_path.c_str(), deviceSys, deviceSys, deviceSubSys, pTsDev->tsName);
 
+  INI::File ft;
 
   isInit = -1;
   // OPI Java Script Logic
@@ -238,7 +240,7 @@ void timingAsynEpics::registerParamListFromFile(string fileName)
   file.close();
 }
 
-
+#if 0
 void timingAsynEpics::cfgInitFromFile(string fileName)
 {
   ifstream file(fileName.c_str());
@@ -276,8 +278,616 @@ void timingAsynEpics::cfgInitFromFile(string fileName)
 
   file.close();
 }
+#else
+
+void timingAsynEpics::cfgGetValue(const char* pvname)
+{
+  char pvnameFull[128];
+  char pvalue[64];
+  sprintf(pvnameFull, "%s:%s", "sysDevName", pvname);
+  sprintf(pvalue, "%s", iniFt.GetSection("CFG")->GetValue(pvnameFull, -1).AsString().c_str());
+  // printf("cfgInitFromFile -> %s = %s\n", pvnameFull, pvalue);
+  db_put(pvnameFull, pvalue);
+}
+
+void timingAsynEpics::cfgGetValueToSet(const char* pvname)
+{
+  char pvnameFull[128];
+  sprintf(pvnameFull, "%s:%s", "sysDevName", pvname);
+  // printf("cfgInitFromFile -> %s = %s\n", pvnameFull, pvalue);
+  db_put(pvnameFull, "1");
+  db_put(pvnameFull, "0");
+}
+
+void timingAsynEpics::cfgInitFromFile(void)
+{
+  if (!iniFt.Load("/mnt/sdcard/pvCfg.ini")){
+		printf("There is no config.ini file\r\n");
+	}
+
+  cfgGetValue("EVR1_TIMEDELAY");             
+  cfgGetValue("EVR1_EXOUTINVERT_0");         
+  cfgGetValue("EVR1_EXOUTINVERT_1");         
+  cfgGetValue("EVR1_EXOUTINVERT_2");         
+  cfgGetValue("EVR1_EXOUTINVERT_3");         
+  cfgGetValue("EVR1_EXOUTINVERT_4");         
+  cfgGetValue("EVR1_EXOUTINVERT_5");         
+  cfgGetValue("EVR1_EXOUTINVERT_6");         
+  cfgGetValue("EVR1_EXOUTINVERT_7");         
+  cfgGetValue("EVR1_EXOUTINVERT_8");         
+  cfgGetValue("EVR1_EXOUTINVERT_9");         
+  cfgGetValue("EVR1_EXOUTINVERT_10");        
+  cfgGetValue("EVR1_EXOUTINVERT_11");        
+  cfgGetValue("EVR1_EXOUTINVERT_12");        
+  cfgGetValue("EVR1_EXOUTINVERT_13");        
+  cfgGetValue("EVR1_EXOUTINVERT_14");        
+  cfgGetValue("EVR1_EXOUTINVERT_15");        
+  cfgGetValue("EVR1_EXOUTINVERT_16");        
+  cfgGetValue("EVR1_EXOUTINVERT_17");        
+  cfgGetValue("EVR1_EXOUTINVERT_18");        
+  cfgGetValue("EVR1_EXOUTINVERT_19");        
+  cfgGetValue("EVR1_EXOUTINVERT_20");        
+  cfgGetValue("EVR1_EXOUTINVERT_21");        
+  cfgGetValue("EVR1_EXOUTINVERT_22");        
+  cfgGetValue("EVR1_EXOUTINVERT_23");        
+  cfgGetValue("EVR1_EXOUTINVERT_24");        
+  cfgGetValue("EVR1_EXOUTINVERT_25");        
+  cfgGetValue("EVR1_EXOUTINVERT_26");        
+  cfgGetValue("EVR1_EXOUTINVERT_27");        
+  cfgGetValue("EVR1_EXOUTINVERT_28");        
+  cfgGetValue("EVR1_EXOUTINVERT_29");        
+  cfgGetValue("EVR1_EXOUTINVERT_30");        
+  cfgGetValue("EVR1_EXOUTINVERT_31");        
+  cfgGetValue("EVR1_PDPDELAY_0");            
+  cfgGetValue("EVR1_PDPDELAY_1");            
+  cfgGetValue("EVR1_PDPDELAY_2");            
+  cfgGetValue("EVR1_PDPDELAY_3");            
+  cfgGetValue("EVR1_PDPDELAY_4");            
+  cfgGetValue("EVR1_PDPDELAY_5");            
+  cfgGetValue("EVR1_PDPDELAY_6");            
+  cfgGetValue("EVR1_PDPDELAY_7");            
+  cfgGetValue("EVR1_PDPDELAY_8");            
+  cfgGetValue("EVR1_PDPDELAY_9");            
+  cfgGetValue("EVR1_PDPDELAY_10");           
+  cfgGetValue("EVR1_PDPDELAY_11");           
+  cfgGetValue("EVR1_PDPDELAY_12");           
+  cfgGetValue("EVR1_PDPDELAY_13");           
+  cfgGetValue("EVR1_PDPDELAY_14");           
+  cfgGetValue("EVR1_PDPDELAY_15");           
+  cfgGetValue("EVR1_PDPDELAY_16");           
+  cfgGetValue("EVR1_PDPDELAY_17");           
+  cfgGetValue("EVR1_PDPDELAY_18");           
+  cfgGetValue("EVR1_PDPDELAY_19");           
+  cfgGetValue("EVR1_PDPDELAY_20");           
+  cfgGetValue("EVR1_PDPDELAY_21");           
+  cfgGetValue("EVR1_PDPDELAY_22");           
+  cfgGetValue("EVR1_PDPDELAY_23");           
+  cfgGetValue("EVR1_PDPDELAY_24");           
+  cfgGetValue("EVR1_PDPDELAY_25");           
+  cfgGetValue("EVR1_PDPDELAY_26");           
+  cfgGetValue("EVR1_PDPDELAY_27");           
+  cfgGetValue("EVR1_PDPDELAY_28");           
+  cfgGetValue("EVR1_PDPDELAY_29");           
+  cfgGetValue("EVR1_PDPDELAY_30");           
+  cfgGetValue("EVR1_PDPDELAY_31");           
+  cfgGetValue("EVR1_PDPWIDTH_0");            
+  cfgGetValue("EVR1_PDPWIDTH_1");            
+  cfgGetValue("EVR1_PDPWIDTH_2");            
+  cfgGetValue("EVR1_PDPWIDTH_3");            
+  cfgGetValue("EVR1_PDPWIDTH_4");            
+  cfgGetValue("EVR1_PDPWIDTH_5");            
+  cfgGetValue("EVR1_PDPWIDTH_6");            
+  cfgGetValue("EVR1_PDPWIDTH_7");            
+  cfgGetValue("EVR1_PDPWIDTH_8");            
+  cfgGetValue("EVR1_PDPWIDTH_9");            
+  cfgGetValue("EVR1_PDPWIDTH_10");           
+  cfgGetValue("EVR1_PDPWIDTH_11");           
+  cfgGetValue("EVR1_PDPWIDTH_12");           
+  cfgGetValue("EVR1_PDPWIDTH_13");           
+  cfgGetValue("EVR1_PDPWIDTH_14");           
+  cfgGetValue("EVR1_PDPWIDTH_15");           
+  cfgGetValue("EVR1_PDPWIDTH_16");           
+  cfgGetValue("EVR1_PDPWIDTH_17");           
+  cfgGetValue("EVR1_PDPWIDTH_18");           
+  cfgGetValue("EVR1_PDPWIDTH_19");           
+  cfgGetValue("EVR1_PDPWIDTH_20");           
+  cfgGetValue("EVR1_PDPWIDTH_21");           
+  cfgGetValue("EVR1_PDPWIDTH_22");           
+  cfgGetValue("EVR1_PDPWIDTH_23");           
+  cfgGetValue("EVR1_PDPWIDTH_24");           
+  cfgGetValue("EVR1_PDPWIDTH_25");           
+  cfgGetValue("EVR1_PDPWIDTH_26");           
+  cfgGetValue("EVR1_PDPWIDTH_27");           
+  cfgGetValue("EVR1_PDPWIDTH_28");           
+  cfgGetValue("EVR1_PDPWIDTH_29");           
+  cfgGetValue("EVR1_PDPWIDTH_30");           
+  cfgGetValue("EVR1_PDPWIDTH_31");           
+  cfgGetValue("EVR1_PDPTRGSEL_0");           
+  cfgGetValue("EVR1_PDPTRGSEL_1");           
+  cfgGetValue("EVR1_PDPTRGSEL_2");           
+  cfgGetValue("EVR1_PDPTRGSEL_3");           
+  cfgGetValue("EVR1_PDPTRGSEL_4");           
+  cfgGetValue("EVR1_PDPTRGSEL_5");           
+  cfgGetValue("EVR1_PDPTRGSEL_6");           
+  cfgGetValue("EVR1_PDPTRGSEL_7");           
+  cfgGetValue("EVR1_PDPTRGSEL_8");           
+  cfgGetValue("EVR1_PDPTRGSEL_9");           
+  cfgGetValue("EVR1_PDPTRGSEL_10");          
+  cfgGetValue("EVR1_PDPTRGSEL_11");          
+  cfgGetValue("EVR1_PDPTRGSEL_12");          
+  cfgGetValue("EVR1_PDPTRGSEL_13");          
+  cfgGetValue("EVR1_PDPTRGSEL_14");          
+  cfgGetValue("EVR1_PDPTRGSEL_15");          
+  cfgGetValue("EVR1_PDPTRGSEL_16");          
+  cfgGetValue("EVR1_PDPTRGSEL_17");          
+  cfgGetValue("EVR1_PDPTRGSEL_18");          
+  cfgGetValue("EVR1_PDPTRGSEL_19");          
+  cfgGetValue("EVR1_PDPTRGSEL_20");          
+  cfgGetValue("EVR1_PDPTRGSEL_21");          
+  cfgGetValue("EVR1_PDPTRGSEL_22");          
+  cfgGetValue("EVR1_PDPTRGSEL_23");          
+  cfgGetValue("EVR1_PDPTRGSEL_24");          
+  cfgGetValue("EVR1_PDPTRGSEL_25");          
+  cfgGetValue("EVR1_PDPTRGSEL_26");          
+  cfgGetValue("EVR1_PDPTRGSEL_27");          
+  cfgGetValue("EVR1_PDPTRGSEL_28");          
+  cfgGetValue("EVR1_PDPTRGSEL_29");          
+  cfgGetValue("EVR1_PDPTRGSEL_30");          
+  cfgGetValue("EVR1_PDPTRGSEL_31");          
+  cfgGetValue("EVR1_PORTFREQ_0");           
+  cfgGetValue("EVR1_PORTFREQ_1");           
+  cfgGetValue("EVR1_PORTFREQ_2");           
+  cfgGetValue("EVR1_PORTFREQ_3");           
+  cfgGetValue("EVR1_PORTFREQ_4");           
+  cfgGetValue("EVR1_PORTFREQ_5");           
+  cfgGetValue("EVR1_PORTFREQ_6");           
+  cfgGetValue("EVR1_PORTFREQ_7");           
+  cfgGetValue("EVR1_PORTFREQ_8");           
+  cfgGetValue("EVR1_PORTFREQ_9");           
+  cfgGetValue("EVR1_PORTFREQ_10");          
+  cfgGetValue("EVR1_PORTFREQ_11");          
+  cfgGetValue("EVR1_PORTFREQ_12");          
+  cfgGetValue("EVR1_PORTFREQ_13");          
+  cfgGetValue("EVR1_PORTFREQ_14");          
+  cfgGetValue("EVR1_PORTFREQ_15");          
+  cfgGetValue("EVR1_PORTFREQ_16");          
+  cfgGetValue("EVR1_PORTFREQ_17");          
+  cfgGetValue("EVR1_PORTFREQ_18");          
+  cfgGetValue("EVR1_PORTFREQ_19");          
+  cfgGetValue("EVR1_PORTFREQ_20");          
+  cfgGetValue("EVR1_PORTFREQ_21");          
+  cfgGetValue("EVR1_PORTFREQ_22");          
+  cfgGetValue("EVR1_PORTFREQ_23");          
+  cfgGetValue("EVR1_PORTFREQ_24");          
+  cfgGetValue("EVR1_PORTFREQ_25");          
+  cfgGetValue("EVR1_PORTFREQ_26");          
+  cfgGetValue("EVR1_PORTFREQ_27");          
+  cfgGetValue("EVR1_PORTFREQ_28");          
+  cfgGetValue("EVR1_PORTFREQ_29");          
+  cfgGetValue("EVR1_PORTFREQ_30");          
+  cfgGetValue("EVR1_PORTFREQ_31");          
+  cfgGetValue("EVR1_RX_DBUSSEL_0");          
+  cfgGetValue("EVR1_RX_DBUSSEL_1");          
+  cfgGetValue("EVR1_RX_DBUSSEL_2");          
+  cfgGetValue("EVR1_RX_DBUSSEL_3");          
+  cfgGetValue("EVR1_RX_DBUSSEL_4");          
+  cfgGetValue("EVR1_RX_DBUSSEL_5");          
+  cfgGetValue("EVR1_RX_DBUSSEL_6");          
+  cfgGetValue("EVR1_RX_DBUSSEL_7");          
+  cfgGetValue("EVR1_EXTOUTSWAP");            
+  cfgGetValue("EVR1_EXTOUTSEL_1PPS");        
+  cfgGetValue("EVR1_EXTOUTSEL_XPS");         
+  cfgGetValue("EVR1_LOGFIFO_ENABLE");        
+  cfgGetValue("EVR1_EXOUTENABLE");           
+  cfgGetValue("EVR1_RXENABLE");              
+  cfgGetValue("EVR0_RXENABLE");              
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_0");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_1");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_2");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_3");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_4");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_5");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_6");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_7");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_8");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_9");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_10"); 
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_11"); 
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_12"); 
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_13"); 
+  cfgGetValue("EVG1_TX_DBUS_SEL_0");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_1");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_2");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_3");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_4");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_5");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_6");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_7");         
+  cfgGetValue("EVG1_SEQ_REPEATREG_0");       
+  cfgGetValue("EVG1_SEQ_REPEATREG_1");       
+  cfgGetValue("EVG1_SEQTRGSEL_0");           
+  cfgGetValue("EVG1_SEQTRGSEL_1");           
+  cfgGetValue("EVG1_SEQTRGMSKA0_0");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_1");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_2");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_3");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_4");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_5");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_6");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_7");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_8");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_15");        
+  cfgGetValue("EVG1_SEQTRGMSKA0_16");        
+  cfgGetValue("EVG1_SEQTRGMSKA0_31");        
+  cfgGetValue("EVG1_SEQTRGMSKA1_0");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_1");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_2");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_3");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_4");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_5");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_6");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_7");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_8");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_15");        
+  cfgGetValue("EVG1_SEQTRGMSKA1_16");        
+  cfgGetValue("EVG1_SEQTRGMSKA1_31");        
+  cfgGetValue("EVG1_SEQTRGMSKB0_0");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_1");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_2");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_3");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_4");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_5");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_6");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_7");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_8");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_15");        
+  cfgGetValue("EVG1_SEQTRGMSKB0_16");        
+  cfgGetValue("EVG1_SEQTRGMSKB0_31");        
+  cfgGetValue("EVG1_SEQTRGMSKB1_0");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_1");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_2");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_3");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_4");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_5");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_6");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_7");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_15");        
+  cfgGetValue("EVG1_SEQTRGMSKB1_16");        
+  cfgGetValue("EVG1_SEQTRGMSKB1_31");        
+  cfgGetValue("EV_CPS_CTL_GT0");             
+  cfgGetValue("EV_CPS_CTL_GT1");             
+  cfgGetValue("EV_CPS_CTL_FMC1");            
+  cfgGetValue("EV_CPS_CTL_FMC2");            
+  cfgGetValue("EV_CPS_CTL_SL");              
+  cfgGetValue("EV_CPS_CTL_SH");              
+  cfgGetValue("EV_CPS_CTL_CTL");             
+  cfgGetValue("EV_CPS_SL_CTRL");             
+  cfgGetValue("EV_CPS_SL_SH");               
+  cfgGetValue("EV_CPS_SL_RSL");              
+  cfgGetValue("EV_CPS_SL_RSH");              
+  cfgGetValue("EV_CPS_SL_00");               
+  cfgGetValue("EV_CPS_SL_01");               
+  cfgGetValue("EV_CPS_SL_02");               
+  cfgGetValue("EV_CPS_SL_03");               
+  cfgGetValue("EV_CPS_SL_04");               
+  cfgGetValue("EV_CPS_SL_05");               
+  cfgGetValue("EV_CPS_SL_06");               
+  cfgGetValue("EV_CPS_SL_07");               
+  cfgGetValue("EV_CPS_SL_08");               
+  cfgGetValue("EV_CPS_SL_09");               
+  cfgGetValue("EV_CPS_SL_10");               
+  cfgGetValue("EV_CPS_SL_11");               
+  cfgGetValue("EV_CPS_SH_CTRL");             
+  cfgGetValue("EV_CPS_SH_SL");               
+  cfgGetValue("EV_CPS_SH_RSH");              
+  cfgGetValue("EV_CPS_SH_RSL");              
+  cfgGetValue("EV_CPS_SH_00");               
+  cfgGetValue("EV_CPS_SH_01");               
+  cfgGetValue("EV_CPS_SH_02");               
+  cfgGetValue("EV_CPS_SH_03");               
+  cfgGetValue("EV_CPS_SH_04");               
+  cfgGetValue("EV_CPS_SH_05");               
+  cfgGetValue("EV_CPS_SH_06");               
+  cfgGetValue("EV_CPS_SH_07");               
+  cfgGetValue("EV_CPS_SH_08");               
+  cfgGetValue("EV_CPS_SH_09");               
+  cfgGetValue("EV_CPS_SH_10");               
+  cfgGetValue("EV_CPS_SH_11");               
+  cfgGetValue("EVG1_TXENABLE_DBUS");         
+  cfgGetValue("EVG1_TXENABLE_MEVCODEA");     
+  cfgGetValue("EVG1_SEQMODE_0");             
+  cfgGetValue("EVG1_SEQMODE_1");             
+  cfgGetValue("EVG1_SEQTRG_EN_0");           
+  cfgGetValue("EVG1_SEQTRG_EN_1");           
+  cfgGetValue("EVG1_TXENABLE_EVCODEA");      
+  cfgGetValue("EVG1_TXENABLE_EVCODEB");      
+  cfgGetValue("EVG1_MXC14ENABLE");           
+
+  cfgGetValueToSet("EV_CPS_SET");
+  cfgGetValueToSet("EVR1_SETCTRLREG");
+}
+#endif
 
 
+void timingAsynEpics::cfgSetValue(const char* pvname)
+{
+  char pvnameFull[128];
+  char pvalue[64];
+  sprintf(pvnameFull, "%s:%s", "sysDevName", pvname);
+  db_get(pvnameFull, pvalue);
+  iniFt.GetSection("CFG")->SetValue(pvnameFull, pvalue);
+}
+
+void timingAsynEpics::cfgSaveToFile(void)
+{
+  cfgGetValue("EVR1_TIMEDELAY");             
+  cfgGetValue("EVR1_EXOUTINVERT_0");         
+  cfgGetValue("EVR1_EXOUTINVERT_1");         
+  cfgGetValue("EVR1_EXOUTINVERT_2");         
+  cfgGetValue("EVR1_EXOUTINVERT_3");         
+  cfgGetValue("EVR1_EXOUTINVERT_4");         
+  cfgGetValue("EVR1_EXOUTINVERT_5");         
+  cfgGetValue("EVR1_EXOUTINVERT_6");         
+  cfgGetValue("EVR1_EXOUTINVERT_7");         
+  cfgGetValue("EVR1_EXOUTINVERT_8");         
+  cfgGetValue("EVR1_EXOUTINVERT_9");         
+  cfgGetValue("EVR1_EXOUTINVERT_10");        
+  cfgGetValue("EVR1_EXOUTINVERT_11");        
+  cfgGetValue("EVR1_EXOUTINVERT_12");        
+  cfgGetValue("EVR1_EXOUTINVERT_13");        
+  cfgGetValue("EVR1_EXOUTINVERT_14");        
+  cfgGetValue("EVR1_EXOUTINVERT_15");        
+  cfgGetValue("EVR1_EXOUTINVERT_16");        
+  cfgGetValue("EVR1_EXOUTINVERT_17");        
+  cfgGetValue("EVR1_EXOUTINVERT_18");        
+  cfgGetValue("EVR1_EXOUTINVERT_19");        
+  cfgGetValue("EVR1_EXOUTINVERT_20");        
+  cfgGetValue("EVR1_EXOUTINVERT_21");        
+  cfgGetValue("EVR1_EXOUTINVERT_22");        
+  cfgGetValue("EVR1_EXOUTINVERT_23");        
+  cfgGetValue("EVR1_EXOUTINVERT_24");        
+  cfgGetValue("EVR1_EXOUTINVERT_25");        
+  cfgGetValue("EVR1_EXOUTINVERT_26");        
+  cfgGetValue("EVR1_EXOUTINVERT_27");        
+  cfgGetValue("EVR1_EXOUTINVERT_28");        
+  cfgGetValue("EVR1_EXOUTINVERT_29");        
+  cfgGetValue("EVR1_EXOUTINVERT_30");        
+  cfgGetValue("EVR1_EXOUTINVERT_31");        
+  cfgGetValue("EVR1_PDPDELAY_0");            
+  cfgGetValue("EVR1_PDPDELAY_1");            
+  cfgGetValue("EVR1_PDPDELAY_2");            
+  cfgGetValue("EVR1_PDPDELAY_3");            
+  cfgGetValue("EVR1_PDPDELAY_4");            
+  cfgGetValue("EVR1_PDPDELAY_5");            
+  cfgGetValue("EVR1_PDPDELAY_6");            
+  cfgGetValue("EVR1_PDPDELAY_7");            
+  cfgGetValue("EVR1_PDPDELAY_8");            
+  cfgGetValue("EVR1_PDPDELAY_9");            
+  cfgGetValue("EVR1_PDPDELAY_10");           
+  cfgGetValue("EVR1_PDPDELAY_11");           
+  cfgGetValue("EVR1_PDPDELAY_12");           
+  cfgGetValue("EVR1_PDPDELAY_13");           
+  cfgGetValue("EVR1_PDPDELAY_14");           
+  cfgGetValue("EVR1_PDPDELAY_15");           
+  cfgGetValue("EVR1_PDPDELAY_16");           
+  cfgGetValue("EVR1_PDPDELAY_17");           
+  cfgGetValue("EVR1_PDPDELAY_18");           
+  cfgGetValue("EVR1_PDPDELAY_19");           
+  cfgGetValue("EVR1_PDPDELAY_20");           
+  cfgGetValue("EVR1_PDPDELAY_21");           
+  cfgGetValue("EVR1_PDPDELAY_22");           
+  cfgGetValue("EVR1_PDPDELAY_23");           
+  cfgGetValue("EVR1_PDPDELAY_24");           
+  cfgGetValue("EVR1_PDPDELAY_25");           
+  cfgGetValue("EVR1_PDPDELAY_26");           
+  cfgGetValue("EVR1_PDPDELAY_27");           
+  cfgGetValue("EVR1_PDPDELAY_28");           
+  cfgGetValue("EVR1_PDPDELAY_29");           
+  cfgGetValue("EVR1_PDPDELAY_30");           
+  cfgGetValue("EVR1_PDPDELAY_31");           
+  cfgGetValue("EVR1_PDPWIDTH_0");            
+  cfgGetValue("EVR1_PDPWIDTH_1");            
+  cfgGetValue("EVR1_PDPWIDTH_2");            
+  cfgGetValue("EVR1_PDPWIDTH_3");            
+  cfgGetValue("EVR1_PDPWIDTH_4");            
+  cfgGetValue("EVR1_PDPWIDTH_5");            
+  cfgGetValue("EVR1_PDPWIDTH_6");            
+  cfgGetValue("EVR1_PDPWIDTH_7");            
+  cfgGetValue("EVR1_PDPWIDTH_8");            
+  cfgGetValue("EVR1_PDPWIDTH_9");            
+  cfgGetValue("EVR1_PDPWIDTH_10");           
+  cfgGetValue("EVR1_PDPWIDTH_11");           
+  cfgGetValue("EVR1_PDPWIDTH_12");           
+  cfgGetValue("EVR1_PDPWIDTH_13");           
+  cfgGetValue("EVR1_PDPWIDTH_14");           
+  cfgGetValue("EVR1_PDPWIDTH_15");           
+  cfgGetValue("EVR1_PDPWIDTH_16");           
+  cfgGetValue("EVR1_PDPWIDTH_17");           
+  cfgGetValue("EVR1_PDPWIDTH_18");           
+  cfgGetValue("EVR1_PDPWIDTH_19");           
+  cfgGetValue("EVR1_PDPWIDTH_20");           
+  cfgGetValue("EVR1_PDPWIDTH_21");           
+  cfgGetValue("EVR1_PDPWIDTH_22");           
+  cfgGetValue("EVR1_PDPWIDTH_23");           
+  cfgGetValue("EVR1_PDPWIDTH_24");           
+  cfgGetValue("EVR1_PDPWIDTH_25");           
+  cfgGetValue("EVR1_PDPWIDTH_26");           
+  cfgGetValue("EVR1_PDPWIDTH_27");           
+  cfgGetValue("EVR1_PDPWIDTH_28");           
+  cfgGetValue("EVR1_PDPWIDTH_29");           
+  cfgGetValue("EVR1_PDPWIDTH_30");           
+  cfgGetValue("EVR1_PDPWIDTH_31");           
+  cfgGetValue("EVR1_PDPTRGSEL_0");           
+  cfgGetValue("EVR1_PDPTRGSEL_1");           
+  cfgGetValue("EVR1_PDPTRGSEL_2");           
+  cfgGetValue("EVR1_PDPTRGSEL_3");           
+  cfgGetValue("EVR1_PDPTRGSEL_4");           
+  cfgGetValue("EVR1_PDPTRGSEL_5");           
+  cfgGetValue("EVR1_PDPTRGSEL_6");           
+  cfgGetValue("EVR1_PDPTRGSEL_7");           
+  cfgGetValue("EVR1_PDPTRGSEL_8");           
+  cfgGetValue("EVR1_PDPTRGSEL_9");           
+  cfgGetValue("EVR1_PDPTRGSEL_10");          
+  cfgGetValue("EVR1_PDPTRGSEL_11");          
+  cfgGetValue("EVR1_PDPTRGSEL_12");          
+  cfgGetValue("EVR1_PDPTRGSEL_13");          
+  cfgGetValue("EVR1_PDPTRGSEL_14");          
+  cfgGetValue("EVR1_PDPTRGSEL_15");          
+  cfgGetValue("EVR1_PDPTRGSEL_16");          
+  cfgGetValue("EVR1_PDPTRGSEL_17");          
+  cfgGetValue("EVR1_PDPTRGSEL_18");          
+  cfgGetValue("EVR1_PDPTRGSEL_19");          
+  cfgGetValue("EVR1_PDPTRGSEL_20");          
+  cfgGetValue("EVR1_PDPTRGSEL_21");          
+  cfgGetValue("EVR1_PDPTRGSEL_22");          
+  cfgGetValue("EVR1_PDPTRGSEL_23");          
+  cfgGetValue("EVR1_PDPTRGSEL_24");          
+  cfgGetValue("EVR1_PDPTRGSEL_25");          
+  cfgGetValue("EVR1_PDPTRGSEL_26");          
+  cfgGetValue("EVR1_PDPTRGSEL_27");          
+  cfgGetValue("EVR1_PDPTRGSEL_28");          
+  cfgGetValue("EVR1_PDPTRGSEL_29");          
+  cfgGetValue("EVR1_PDPTRGSEL_30");          
+  cfgGetValue("EVR1_PDPTRGSEL_31");          
+  cfgGetValue("EVR1_RX_DBUSSEL_0");          
+  cfgGetValue("EVR1_RX_DBUSSEL_1");          
+  cfgGetValue("EVR1_RX_DBUSSEL_2");          
+  cfgGetValue("EVR1_RX_DBUSSEL_3");          
+  cfgGetValue("EVR1_RX_DBUSSEL_4");          
+  cfgGetValue("EVR1_RX_DBUSSEL_5");          
+  cfgGetValue("EVR1_RX_DBUSSEL_6");          
+  cfgGetValue("EVR1_RX_DBUSSEL_7");          
+  cfgGetValue("EVR1_EXTOUTSWAP");            
+  cfgGetValue("EVR1_EXTOUTSEL_1PPS");        
+  cfgGetValue("EVR1_EXTOUTSEL_XPS");         
+  cfgGetValue("EVR1_LOGFIFO_ENABLE");        
+  cfgGetValue("EVR1_EXOUTENABLE");           
+  cfgGetValue("EVR1_RXENABLE");              
+  cfgGetValue("EVR0_RXENABLE");              
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_0");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_1");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_2");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_3");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_4");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_5");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_6");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_7");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_8");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_9");  
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_10"); 
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_11"); 
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_12"); 
+  cfgGetValue("EVG1_MXC14_PRESCALERREG_13"); 
+  cfgGetValue("EVG1_TX_DBUS_SEL_0");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_1");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_2");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_3");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_4");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_5");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_6");         
+  cfgGetValue("EVG1_TX_DBUS_SEL_7");         
+  cfgGetValue("EVG1_SEQ_REPEATREG_0");       
+  cfgGetValue("EVG1_SEQ_REPEATREG_1");       
+  cfgGetValue("EVG1_SEQTRGSEL_0");           
+  cfgGetValue("EVG1_SEQTRGSEL_1");           
+  cfgGetValue("EVG1_SEQTRGMSKA0_0");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_1");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_2");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_3");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_4");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_5");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_6");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_7");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_8");         
+  cfgGetValue("EVG1_SEQTRGMSKA0_15");        
+  cfgGetValue("EVG1_SEQTRGMSKA0_16");        
+  cfgGetValue("EVG1_SEQTRGMSKA0_31");        
+  cfgGetValue("EVG1_SEQTRGMSKA1_0");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_1");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_2");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_3");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_4");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_5");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_6");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_7");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_8");         
+  cfgGetValue("EVG1_SEQTRGMSKA1_15");        
+  cfgGetValue("EVG1_SEQTRGMSKA1_16");        
+  cfgGetValue("EVG1_SEQTRGMSKA1_31");        
+  cfgGetValue("EVG1_SEQTRGMSKB0_0");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_1");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_2");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_3");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_4");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_5");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_6");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_7");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_8");         
+  cfgGetValue("EVG1_SEQTRGMSKB0_15");        
+  cfgGetValue("EVG1_SEQTRGMSKB0_16");        
+  cfgGetValue("EVG1_SEQTRGMSKB0_31");        
+  cfgGetValue("EVG1_SEQTRGMSKB1_0");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_1");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_2");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_3");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_4");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_5");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_6");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_7");         
+  cfgGetValue("EVG1_SEQTRGMSKB1_15");        
+  cfgGetValue("EVG1_SEQTRGMSKB1_16");        
+  cfgGetValue("EVG1_SEQTRGMSKB1_31");        
+  cfgGetValue("EV_CPS_CTL_GT0");             
+  cfgGetValue("EV_CPS_CTL_GT1");             
+  cfgGetValue("EV_CPS_CTL_FMC1");            
+  cfgGetValue("EV_CPS_CTL_FMC2");            
+  cfgGetValue("EV_CPS_CTL_SL");              
+  cfgGetValue("EV_CPS_CTL_SH");              
+  cfgGetValue("EV_CPS_CTL_CTL");             
+  cfgGetValue("EV_CPS_SL_CTRL");             
+  cfgGetValue("EV_CPS_SL_SH");               
+  cfgGetValue("EV_CPS_SL_RSL");              
+  cfgGetValue("EV_CPS_SL_RSH");              
+  cfgGetValue("EV_CPS_SL_00");               
+  cfgGetValue("EV_CPS_SL_01");               
+  cfgGetValue("EV_CPS_SL_02");               
+  cfgGetValue("EV_CPS_SL_03");               
+  cfgGetValue("EV_CPS_SL_04");               
+  cfgGetValue("EV_CPS_SL_05");               
+  cfgGetValue("EV_CPS_SL_06");               
+  cfgGetValue("EV_CPS_SL_07");               
+  cfgGetValue("EV_CPS_SL_08");               
+  cfgGetValue("EV_CPS_SL_09");               
+  cfgGetValue("EV_CPS_SL_10");               
+  cfgGetValue("EV_CPS_SL_11");               
+  cfgGetValue("EV_CPS_SH_CTRL");             
+  cfgGetValue("EV_CPS_SH_SL");               
+  cfgGetValue("EV_CPS_SH_RSH");              
+  cfgGetValue("EV_CPS_SH_RSL");              
+  cfgGetValue("EV_CPS_SH_00");               
+  cfgGetValue("EV_CPS_SH_01");               
+  cfgGetValue("EV_CPS_SH_02");               
+  cfgGetValue("EV_CPS_SH_03");               
+  cfgGetValue("EV_CPS_SH_04");               
+  cfgGetValue("EV_CPS_SH_05");               
+  cfgGetValue("EV_CPS_SH_06");               
+  cfgGetValue("EV_CPS_SH_07");               
+  cfgGetValue("EV_CPS_SH_08");               
+  cfgGetValue("EV_CPS_SH_09");               
+  cfgGetValue("EV_CPS_SH_10");               
+  cfgGetValue("EV_CPS_SH_11");               
+  cfgGetValue("EVG1_TXENABLE_DBUS");         
+  cfgGetValue("EVG1_TXENABLE_MEVCODEA");     
+  cfgGetValue("EVG1_SEQMODE_0");             
+  cfgGetValue("EVG1_SEQMODE_1");             
+  cfgGetValue("EVG1_SEQTRG_EN_0");           
+  cfgGetValue("EVG1_SEQTRG_EN_1");           
+  cfgGetValue("EVG1_TXENABLE_EVCODEA");      
+  cfgGetValue("EVG1_TXENABLE_EVCODEB");      
+  cfgGetValue("EVG1_MXC14ENABLE");           
+
+  iniFt.Save("/mnt/sdcard/pvCfg.ini");
+}
 
 
 void timingAsynEpics::waveformInitFromFile(const char *pvname)
@@ -661,11 +1271,15 @@ asynStatus timingAsynEpics::writeOctet(asynUser *pasynUser, const char *value, s
   if(status != asynSuccess) return(status);
 
   if(checkParam(regmaptable[function].drvname) == -1) return(asynError);
-
-
-  status = pTsDev->writeString(regmaptable[function], value);
-  if (status != asynSuccess) return(status);
-
+  
+  if(dataType_pvValSaveCmd != regmaptable[function].dataType){
+    status = pTsDev->writeString(regmaptable[function], value);
+    if (status != asynSuccess) return(status);
+  }
+  else{
+    cfgSaveToFile();
+  }
+  
   /* Fetch the parameter string name for possible use in debugging */
   getParamName(function, &paramName);
   /* Do callbacks so higher layers see any changes */
@@ -674,7 +1288,6 @@ asynStatus timingAsynEpics::writeOctet(asynUser *pasynUser, const char *value, s
   else        
     asynPrint(pasynUser, ASYN_TRACEIO_DRIVER, "%s:%s: function=%d, name=%s, value=%d\n", driverName, __FUNCTION__, function, paramName, value);
     
-
   *nActual = strlen(value);
   return (status);
 }
@@ -1017,7 +1630,8 @@ void timingAsynEpics::userP_main()
   string iValFileName_cfg;
   iValFileName_cfg = iValFileName;
   iValFileName_cfg += "config.init";
-  cfgInitFromFile(iValFileName_cfg);
+  // cfgInitFromFile(iValFileName_cfg);
+  cfgInitFromFile();
 
   if( (pTsDev->tsMode == RAON_EVG) || (pTsDev->tsMode == RAON_EVS) || (pTsDev->tsMode == RAON_EVRUP) )
   {
