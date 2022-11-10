@@ -466,14 +466,6 @@ void timingAsynEpics::cfgInitFromFile(void)
   cfgGetValue("EVR1_PORTFREQ_29");          
   cfgGetValue("EVR1_PORTFREQ_30");          
   cfgGetValue("EVR1_PORTFREQ_31");          
-  cfgGetValue("EVR1_RX_DBUSSEL_0");          
-  cfgGetValue("EVR1_RX_DBUSSEL_1");          
-  cfgGetValue("EVR1_RX_DBUSSEL_2");          
-  cfgGetValue("EVR1_RX_DBUSSEL_3");          
-  cfgGetValue("EVR1_RX_DBUSSEL_4");          
-  cfgGetValue("EVR1_RX_DBUSSEL_5");          
-  cfgGetValue("EVR1_RX_DBUSSEL_6");          
-  cfgGetValue("EVR1_RX_DBUSSEL_7");          
   cfgGetValue("EVR1_EXTOUTSWAP");            
   cfgGetValue("EVR1_EXTOUTSEL_1PPS");        
   cfgGetValue("EVR1_EXTOUTSEL_XPS");         
@@ -605,7 +597,6 @@ void timingAsynEpics::cfgInitFromFile(void)
 
   cfgGetValueToSet("EV_CPS_SET");
   cfgGetValueToSet("EVR1_SETCTRLREG");
-  cfgGetValueToSet("SYS_SAVE_CFG");
 }
 #endif
 
@@ -783,15 +774,6 @@ void timingAsynEpics::cfgSaveToFile(void)
   cfgSetValue("EVR1_PORTFREQ_29");          
   cfgSetValue("EVR1_PORTFREQ_30");          
   cfgSetValue("EVR1_PORTFREQ_31");          
-
-  cfgSetValue("EVR1_RX_DBUSSEL_0");          
-  cfgSetValue("EVR1_RX_DBUSSEL_1");          
-  cfgSetValue("EVR1_RX_DBUSSEL_2");          
-  cfgSetValue("EVR1_RX_DBUSSEL_3");          
-  cfgSetValue("EVR1_RX_DBUSSEL_4");          
-  cfgSetValue("EVR1_RX_DBUSSEL_5");          
-  cfgSetValue("EVR1_RX_DBUSSEL_6");          
-  cfgSetValue("EVR1_RX_DBUSSEL_7");          
   cfgSetValue("EVR1_EXTOUTSWAP");            
   cfgSetValue("EVR1_EXTOUTSEL_1PPS");        
   cfgSetValue("EVR1_EXTOUTSEL_XPS");         
