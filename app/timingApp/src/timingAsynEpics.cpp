@@ -284,7 +284,7 @@ void timingAsynEpics::cfgGetValue(const char* pvname)
 {
   char pvnameFull[128];
   char pvalue[64];
-  sprintf(pvnameFull, "%s:%s", "sysDevName", pvname);
+  sprintf(pvnameFull, "%s:%s", sysDevName, pvname);
   sprintf(pvalue, "%s", iniFt.GetSection("CFG")->GetValue(pvnameFull, -1).AsString().c_str());
   // printf("cfgInitFromFile -> %s = %s\n", pvnameFull, pvalue);
   db_put(pvnameFull, pvalue);
@@ -293,7 +293,7 @@ void timingAsynEpics::cfgGetValue(const char* pvname)
 void timingAsynEpics::cfgGetValueToSet(const char* pvname)
 {
   char pvnameFull[128];
-  sprintf(pvnameFull, "%s:%s", "sysDevName", pvname);
+  sprintf(pvnameFull, "%s:%s", sysDevName, pvname);
   // printf("cfgInitFromFile -> %s = %s\n", pvnameFull, pvalue);
   db_put(pvnameFull, "1");
   db_put(pvnameFull, "0");
@@ -614,7 +614,7 @@ void timingAsynEpics::cfgSetValue(const char* pvname)
 {
   char pvnameFull[128];
   char pvalue[64];
-  sprintf(pvnameFull, "%s:%s", "sysDevName", pvname);
+  sprintf(pvnameFull, "%s:%s", sysDevName, pvname);
   db_get(pvnameFull, pvalue);
   iniFt.GetSection("CFG")->SetValue(pvnameFull, pvalue);
 }
