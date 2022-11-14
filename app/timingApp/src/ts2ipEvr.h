@@ -139,7 +139,12 @@ namespace timing
                                //            evr_pdpTrgSrcSel  slv_reg62[8];
       uint evLogFifo_En_user ; // slv_reg63[0];
 
-      uint mappingRAM[2048];
+      // uint mappingRAM[2048];
+      uint evCodeList[16]; 
+      uint pfreqVal[32][16];
+      int cfg_portFreq(uint portNum, uint freqListN);
+      int set_evCodeList(void);
+
 
       uint evgCmd ;
       uint evgCmdSub ;

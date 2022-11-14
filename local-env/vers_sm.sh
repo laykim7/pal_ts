@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_sm="5e0ab2c 2022-01-18T17:30:58"
+export ver_sm="b593353 2021-11-30T21:27:56"
 
 : <<'END'
 ================================================================================================================
-commit log 2022-01-18T17:30:58
+commit log 2021-11-30T21:27:56
 ================================================================================================================
-5e0ab2c695f3c914130f06b4e9032e8689525055 Tue, 18 Jan 2022 17:29:08 +0900, update sm version info
-579be5689e3fbb98493d0175accde8116ca28d04 Tue, 18 Jan 2022 17:26:42 +0900, update sm version info
-52407ae05bdee8fde72325b9a27d469626f689cd Tue, 18 Jan 2022 17:26:41 +0900, expect update
-84e2c17571e926e0649ab7aabaca4fa9bef6edf9 Tue, 18 Jan 2022 17:12:43 +0900, update sm version info
-6b6eaa710c0fee0b6338a183deb2444a96481eb5 Tue, 18 Jan 2022 17:12:29 +0900, test
-a4c03214126725ca75f59e4b63feac66dea3b9c7 Tue, 18 Jan 2022 17:08:07 +0900, update sm version info
-d968ad1ae9b94695c204bee9f7c917f96a887a05 Tue, 18 Jan 2022 17:07:23 +0900, update sm version info
-e2254bf4a0db305d3b9d0060344a346eeb04dac8 Tue, 18 Jan 2022 17:02:01 +0900, update sm version info
-938b22caf0a365ba14a7e5ad76d8843098ec699d Tue, 18 Jan 2022 17:00:38 +0900, test
-298d43a6f16700fb51bc61bda3293508fddc8c6d Tue, 18 Jan 2022 11:37:16 +0900, remove auto start
+b593353890f4c0521501da3fe82ff7e387a80df9 Tue, 30 Nov 2021 21:27:55 +0900, update
+79cd41573174796cfc5484f2c6c7b5eee0b1ab47 Tue, 30 Nov 2021 21:18:28 +0900, update sm version info
+ea79e97fb4453d82752f98a7112782abb689762a Tue, 30 Nov 2021 21:18:27 +0900, update
+e8069f41597185ec36e19bad76589cd508fa5c33 Tue, 30 Nov 2021 21:10:36 +0900, update sm version info
+cd562ebcd786750b5bf8ff7723696f49dc6cbd08 Tue, 30 Nov 2021 21:10:35 +0900, update
+0a2fd518b9e55ac67743e2af7a6f064519ca6e55 Tue, 30 Nov 2021 21:08:10 +0900, update sm version info
+ec405089c9e22f9240618aee329452a124de89bb Tue, 30 Nov 2021 21:08:09 +0900, update
+88f37cc269c6bf7b6a56c81b2fa8571ced85d066 Tue, 30 Nov 2021 21:04:26 +0900, update sm version info
+c4ec87d4b6a6c1526d1bbd894edc95070d6400ff Tue, 30 Nov 2021 21:04:25 +0900, update
+e199e60f9b3e60b7296296534e62328fc08711a2 Tue, 30 Nov 2021 20:57:27 +0900, update sm version info
 
 ================================================================================================================
 END

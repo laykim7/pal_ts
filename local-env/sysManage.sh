@@ -36,25 +36,12 @@ set timeout 180
 spawn git pull $gitServerName $gitBranchName
 expect {
   "(y/n)"               {send "y\r";            exp_continue}
-  "Username"            {send "root\n";         exp_continue}
-  "password:"           {send "$gitServerPD\n"; exp_continue}
+  "Username"            {send "laykim\n";       exp_continue}
+  "Password"            {send "$gitServerPD\n"; exp_continue}
   "root@"               {send "\r";             exp_continue}
   "Already up-to-date." {send "\r";             exp_continue}
 }
-expect {
-  "(y/n)"               {send "y\r";            exp_continue}
-  "Username"            {send "root\n";         exp_continue}
-  "password:"           {send "$gitServerPD\n"; exp_continue}
-  "root@"               {send "\r";             exp_continue}
-  "Already up-to-date." {send "\r";             exp_continue}
-}
-expect {
-  "(y/n)"               {send "y\r";            exp_continue}
-  "Username"            {send "root\n";         exp_continue}
-  "password:"           {send "$gitServerPD\n"; exp_continue}
-  "root@"               {send "\r";             exp_continue}
-  "Already up-to-date." {send "\r";             exp_continue}
-}expect eof   
+expect eof   
 
 EOF
 }
@@ -219,7 +206,6 @@ start ()
   mkdir /mnt/nfs
   # mount -o nolock ${serverIp}:${wspace} /mnt/nfs
   # chkVer
-
 
   if [ ${insDrv0} = 1 ]; then insmod ${drv0}; fi
   if [ ${insDrv1} = 1 ]; then insmod ${drv1}; fi

@@ -54,6 +54,7 @@ private:
   char softwareVer[128];
 
   string regFileName;
+  INI::File iniFt;
 
   const char *driverName;
   epicsEventId eventId_;
@@ -89,8 +90,13 @@ private:
   asynStatus readFloat64(asynUser *pasynUser, epicsFloat64 *value);
 
   //New 
-  void cfgInitFromFile(string fileName);
+  // void cfgInitFromFile(string fileName);
+  void cfgInitFromFile(void);
   void waveformInitFromFile(const char *pvname);
+  void cfgGetValue(const char* pvname);
+  void cfgGetValueToSet(const char* pvname);
+  void cfgSaveToFile(void);
+  void cfgSetValue(const char* pvname);
 
   asynStatus db_put(const char *pname, const char *pvalue);
   asynStatus db_get(const char *pname, char *pvalue);

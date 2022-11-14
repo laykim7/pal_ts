@@ -76,6 +76,28 @@ static char evOutSrcName[EV_OUT_SRC_MAX][20] ={
   {"PDP_OUT_24"},  {"PDP_OUT_25"},  {"PDP_OUT_26"},  {"PDP_OUT_27"},
   {"PDP_OUT_28"},  {"PDP_OUT_29"},  {"PDP_OUT_30"},  {"PDP_OUT_31"} };
 
+
+static uint pfreqList[17][16]  = {
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},   //  0 -  0  Hz
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},   //  1 -  0.5 Hz
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1},   //  2 -  1 Hz
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1},   //  3 -  2 Hz
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1},   //  4 -  3 Hz
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1},   //  5 -  4 Hz
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1},   //  6 -  5 Hz
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1},   //  7 -  6 Hz
+  {0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1},   //  8 -  8 Hz
+  {0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1},   //  9 - 10 Hz
+  {0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1},   // 10 - 12 Hz
+  {0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1},   // 11 - 15 Hz
+  {0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1},   // 12 - 20 Hz
+  {0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1},   // 13 - 30 Hz
+  {0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1},   // 14 - 40 Hz
+  {0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1},   // 15 - 60 Hz
+  {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}    // 16 - 120 Hz
+  };
+
+
 //==============================================================================
 //----===@ class
 //==============================================================================
@@ -87,7 +109,8 @@ static char evOutSrcName[EV_OUT_SRC_MAX][20] ={
 // Description :
 ts2ipEvr::ts2ipEvr(const char *deviceName, uint tzone, double tickPeriod)
 {
-  memset(mappingRAM  , 0, sizeof(mappingRAM  ));
+  // memset(mappingRAM  , 0, sizeof(mappingRAM  ));
+  int i;
 
   ip_open(deviceName);
 
@@ -102,6 +125,13 @@ ts2ipEvr::ts2ipEvr(const char *deviceName, uint tzone, double tickPeriod)
   sprintf(logTime.name, "%s log", devName);
   logTime.tzone = tzone;
   logTime.tickPeriod = tickPeriod;
+
+  for(i=0;i<2048;i++) setEvRam(i, 0);
+  for(i=0;i<2048;i++) setEvRamN(i, 0);
+
+  memset(evCodeList, 0, sizeof(evCodeList));
+  memset(pfreqVal, 0, sizeof(pfreqVal));
+
 }
 
 //=====================================
@@ -134,6 +164,61 @@ int ts2ipEvr::enable(uint exOut, uint rxTNet )
 
   return rtVal;
 };
+
+
+
+
+
+
+
+
+//=====================================
+//----===@ cfg_portFreq
+// Parameters  :
+// Description : 
+int ts2ipEvr::cfg_portFreq(uint portNum, uint freqListN)
+{
+  ifRet(portNum > 31);
+  ifRet(freqListN > 16);
+
+  memcpy(pfreqVal[portNum], pfreqList[freqListN], sizeof(pfreqList[0]));
+
+  return RET_OK;
+};
+
+
+
+//=====================================
+//----===@ set_evCodeList
+// Parameters  :
+// Description : 
+int ts2ipEvr::set_evCodeList(void)
+{
+  int i, j;
+  unsigned int tmpVal;
+  printf("=== set_evCodeList ===\r\n");
+
+  for(i=0; i<16; i++){
+    tmpVal = 0;
+    for(j=0; j<32; j++){
+      tmpVal |= (pfreqVal[j][i]<<j);
+    }
+    evCodeList[i] = tmpVal;
+  }
+
+  for(i=0; i<16; i++){
+    setEvRam(i+1, evCodeList[i]);
+    printf("0x%08x\r\n", evCodeList[i]);
+  }
+
+  return RET_OK;
+};
+
+
+
+
+
+
 
 //=====================================
 //----===@ getStat

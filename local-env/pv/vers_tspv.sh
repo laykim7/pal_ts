@@ -3,22 +3,22 @@
 # Version determined from Git #
 # Generated file, do not edit! #
 
-export ver_tspv="f1f3f19 2022-11-08T16:39:34"
+export ver_tspv="d03c55d 2022-10-26T16:33:57"
 
 : <<'END'
 ================================================================================================================
-commit log 2022-11-08T16:39:34
+commit log 2022-10-26T16:33:57
 ================================================================================================================
-f1f3f19d4139acd7f033f4fdb127e2ed4a2be7de Tue, 8 Nov 2022 16:39:29 +0900, update pv ver info3
-f947dd24676719f0a3fae6e7878a7715766c57f9 Tue, 8 Nov 2022 16:36:50 +0900, update tspv version info
-5780c9feb9b890533e61bbfb86d977b049b16c3a Tue, 8 Nov 2022 16:36:46 +0900, update pv ver info2
-4a0e8bfa2531c913617973a213a015ac075d2ffb Tue, 8 Nov 2022 16:32:02 +0900, update tspv version info
-d8cb8bf7458e77f63329d58fc5c98ebe9e8cf8a5 Tue, 8 Nov 2022 16:31:58 +0900, update pv ver info
-28667e6422828564705282612e86baf3fbe533ca Tue, 8 Nov 2022 16:14:07 +0900, update tspv version info
-d51c0ebbbeeab10baeb7aa0e1fe906c2937cc0bd Tue, 8 Nov 2022 16:12:05 +0900, pv val change g, r1,2,3,4
-fc87165ae9352aac80e747b18d2d27f893d8d7d3 Thu, 27 Oct 2022 18:04:58 +0900, pv up
-1b658137f4a24ce90c640f7c2a20124f0b0cbe70 Thu, 27 Oct 2022 17:53:11 +0900, pv up
-0506ef40c70adb8863ea6da28b36a7c35aed35a4 Thu, 27 Oct 2022 17:42:08 +0900, pv up
+d03c55d9b00f47150f3b2a279e319d4c7047a4d6 Wed, 26 Oct 2022 16:33:55 +0900, update
+4d86f0e09c36e6f9b2a206614f8fd6bebef4e5bf Wed, 26 Oct 2022 16:23:28 +0900, update tspv version info
+b4493bf6b2a964b5efb1c11f28ae9b1d11b55f8b Wed, 26 Oct 2022 16:17:55 +0900, io port freq out change 120~0.5
+a42629d74c7a383a7ec34e0253d5f6afe905ce2f Fri, 21 Oct 2022 16:45:09 +0900, pv init update - evcode various freq 120,60,40,30,20,15,12,~
+a3741e1d1433379da1196e21e7326da8bdc2e2c2 Mon, 17 Oct 2022 12:01:00 +0900, pv init update
+0d18126d615cc43190656812ceb426e623cf2b3e Mon, 17 Oct 2022 11:49:16 +0900, update sw version info
+673f716936cba7b1cbb881ba50e87d94fb6d09bd Mon, 17 Oct 2022 11:49:14 +0900, evr map rma init max value bug fix 8
+4f27f7fe1baeb9aaae0476ee2822a5d5584eca2d Mon, 17 Oct 2022 11:46:40 +0900, update sw version info
+e439db1ca717abad830122034b0d8ae7a302bf45 Mon, 17 Oct 2022 11:46:38 +0900, evr map rma init max value bug fix 7
+c34e0e64cc32067aad460aebf4a0156571423f54 Mon, 17 Oct 2022 11:29:43 +0900, update sw version info
 
 ================================================================================================================
 END

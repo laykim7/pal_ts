@@ -46,7 +46,7 @@ timingAsynEpics.o: ../timingAsynEpics.cpp \
  /home/ctrluser/epics/R3.14.12.5/base/include/dbAccessDefs.h \
  /home/ctrluser/epics/R3.14.12.5/base/include/db_access_routines.h \
  /home/ctrluser/epics/R3.14.12.5/base/include/waveformRecord.h \
- ../timingAsynEpics.h \
+ ../iniparser.hpp ../timingAsynEpics.h \
  /home/ctrluser/epics/R3.14.12.5/epicsLibs/synApps_5_8/support/asyn-4-26/include/asynPortDriver.h \
  /home/ctrluser/epics/R3.14.12.5/epicsLibs/synApps_5_8/support/asyn-4-26/include/asynStandardInterfaces.h \
  /home/ctrluser/epics/R3.14.12.5/epicsLibs/synApps_5_8/support/asyn-4-26/include/asynDriver.h \
