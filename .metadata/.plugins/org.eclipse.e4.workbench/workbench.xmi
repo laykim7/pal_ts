@@ -123,7 +123,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_ONiNZ35nEey4D7L3GMf34Q" elementId="org.eclipse.ui.editorss" selectedElement="_ONiNaH5nEey4D7L3GMf34Q">
-      <children xsi:type="basic:PartStack" xmi:id="_ONiNaH5nEey4D7L3GMf34Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_EzeukL8YEe2YmPK8uUGZCA">
+      <children xsi:type="basic:PartStack" xmi:id="_ONiNaH5nEey4D7L3GMf34Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_ONiNa35nEey4D7L3GMf34Q">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -132,6 +132,8 @@
           <tags>Editor</tags>
           <tags>org.csstudio.opibuilder.OPIEditor</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
           <menus xsi:type="menu:PopupMenu" xmi:id="_ONiNbH5nEey4D7L3GMf34Q" elementId="org.csstudio.opibuilder.OPIEditor">
             <tags>menuContribution:popup</tags>
             <tags>popup:org.csstudio.opibuilder.OPIEditor</tags>
@@ -146,8 +148,6 @@
           <tags>Editor</tags>
           <tags>org.csstudio.opibuilder.OPIEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
