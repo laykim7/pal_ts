@@ -109,8 +109,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>27</height>
     <items>
-      <s>SCL1</s>
-      <s>SCL2</s>
+      <s>EUV</s>
       <s>SCL3</s>
     </items>
     <items_from_pv>false</items_from_pv>
@@ -156,6 +155,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>27</height>
     <items>
+      <s>CNT</s>
       <s>TS</s>
     </items>
     <items_from_pv>false</items_from_pv>
@@ -370,7 +370,6 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>27</height>
     <items>
-      <s>000</s>
       <s>001</s>
       <s>002</s>
       <s>003</s>
@@ -442,104 +441,5 @@ $(pv_value)</tooltip>
     <wuid>-4de3fc4e:166c99a9cb2:-7a83</wuid>
     <x>346</x>
     <y>16</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="true">
-      <action type="EXECUTE_JAVASCRIPT">
-        <path>open_zqsystem.js</path>
-        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
-]]></scriptText>
-        <embedded>false</embedded>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>20</height>
-    <image></image>
-    <name>Action Button_1</name>
-    <push_action_index>0</push_action_index>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>0</style>
-    <text>OPEN</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>65</width>
-    <wuid>-61984c53:16b0b8a1c2e:-575b</wuid>
-    <x>456</x>
-    <y>72</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="맑은 고딕" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>27</height>
-    <items>
-      <s>ZQ9R</s>
-    </items>
-    <items_from_pv>false</items_from_pv>
-    <name>comboBox_5</name>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>false</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Combo</widget_type>
-    <width>100</width>
-    <wuid>-61984c53:16b0b8a1c2e:-5729</wuid>
-    <x>236</x>
-    <y>68</y>
   </widget>
 </display>
