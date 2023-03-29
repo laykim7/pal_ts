@@ -620,8 +620,8 @@ int tsDev_evx::devProc(void)
   if((gt1_tLoss_pre != gtp[0]->stat[1].trackLossCnt) || (gtp[0]->stat[1].track_data == 0)){
     timingNetOK = 0;
     if(tsMode != RAON_EVF){
-      prnM2("[ERR]gt1 trackLoss [Loss - %d]: %d   ", gtp[0]->stat[1].track_data, gtp[0]->stat[1].trackLossCnt - gt1_tLoss_pre);
-      evr[1]->ip_prnTime(&evr[1]->evTime);
+      prnM2("[ERR]gt1 trackLoss [Loss - %d]: %4d / %9d/ %9d", gtp[0]->stat[1].track_data, gtp[0]->stat[1].trackLossCnt - gt1_tLoss_pre, gtp[0]->stat[0].txClk_cntr, gtp[0]->stat[1].txClk_cntr);
+      // evr[1]->ip_prnTime(&evr[1]->evTime);
       prnM2("\r\n");
     }
 
